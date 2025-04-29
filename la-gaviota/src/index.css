@@ -3,6 +3,71 @@
 @tailwind utilities;
 
 body {
-  background-color: #7C4B36;
+  background-color: #3C2317;
   font-family: "Quicksand", sans-serif;
+}
+
+
+/* Scroll oculto hasta que se usa */
+.scroll-smoothbar::-webkit-scrollbar {
+  width: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+.scroll-smoothbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scroll-smoothbar::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  border-radius: 10px;
+}
+
+/* Al hacer hover o scroll, se muestra */
+.scroll-smoothbar:hover::-webkit-scrollbar-thumb,
+.scroll-smoothbar:active::-webkit-scrollbar-thumb,
+.scroll-smoothbar:focus::-webkit-scrollbar-thumb {
+  background-color: #F6E6CB; /* tu marrón oscuro */
+}
+
+/* Scrollbar para todo el body (general - navegador) */
+html, body {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE y Edge */
+}
+
+/* Chrome, Edge, Safari */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+@font-face {
+  font-family: 'boska';
+  src: url('./assets/fonts/Boska-Black.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'general';
+  src: url('./assets/fonts/GeneralSans-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'recia';
+  src: url('./assets/fonts/Recia-Bold.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'gambarino';
+  src: url('./assets/fonts/Gambarino-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'lovelo';
+  src: url('./assets/fonts/Lovelo-Black.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
 }

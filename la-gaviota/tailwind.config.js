@@ -4,13 +4,16 @@ export default {
   theme: {
     extend: {
       colors: {
-        "wood-brown": "#7C4B36",
-        "soft-beige": "#F7F0E6",
-        "forest-green": "#487D57",
+        "wood-brown": "#3C2317",
+        "soft-beige": "#F6E6CB",
+        "forest-green": "#F6E6CB",
       },
       fontFamily: {
-        title: ['"Playfair Display"', 'serif'],
-        body: ['"Quicksand"', 'sans-serif'],
+        title: ['"lovelo"', 'serif'],
+        body: ['"general"', 'sans-serif'],
+        surfClub: ['"boska"', 'sans-serif'],
+        eventos: ['"recia"', 'sans-serif'],
+        menu: ['"gambarino"', 'sans-serif'],
       },
     },
   },

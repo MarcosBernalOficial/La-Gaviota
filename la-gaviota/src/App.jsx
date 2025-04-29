@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import SurfClub from "./pages/SurfClub";
 import Eventos from "./pages/Eventos";
@@ -9,7 +10,8 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <Router>
-      <div className="flex flex-col min-h-screen">
+      <Navbar />
+      <div className=" flex flex-col min-h-screen">
         <Header />
         <main className="flex-grow bg-soft-beige p-4">
           <Routes>

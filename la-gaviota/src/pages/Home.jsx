@@ -20,8 +20,8 @@ const Home = () => {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 p-6 max-w-7xl mx-auto">
         
         {/* Carrusel principal - Eventos */}
-        <div className="lg:col-span-2">
-            <CardLink to="/eventos" title="Eventos">
+        <div className="lg:col-span-2 self-center">
+            <CardLink to="/eventos" title="Eventos" font="font-eventos">
             <Carousel images={[evento1, evento2, evento3]} />
             </CardLink>
         </div>
@@ -29,37 +29,71 @@ const Home = () => {
         {/* Menú Promociones */}
         <Link
         to="/menu"
-        className="bg-soft-beige backdrop-blur-md rounded-2xl p-6 shadow-2xl flex flex-col justify-between hover:shadow-3xl transition-all duration-300 cursor-pointer"
+        className="scroll-smoothbar bg-soft-beige backdrop-blur-md rounded-2xl p-6 shadow-2xl flex flex-col justify-between hover:shadow-3xl transition-all duration-300 cursor-pointer max-h-[300px] md:max-h-[450px] overflow-y-auto"
         >
         <div>
-            <h2 className="text-center font-title text-3xl text-wood-brown font-bold mb-6">Promociones</h2>
+            <h2 className="text-center font-menu text-3xl text-wood-brown font-bold mb-6">
+            Menú del Día
+            </h2>
             <div className="flex flex-col gap-6">
-            <div className="bg-soft-beige p-4 rounded-xl shadow-md hover:shadow-lg transition">
-            <div className="flex justify-between items-center">
-                <h3 className="text-xl font-semibold text-wood-brown mb-2">
-                Rabas + Stella
+            {/* Producto 1 */}
+            <div className="bg-soft-beige p-4 rounded-xl shadow-md hover:shadow-lg transition snap-start">
+                <div className="flex justify-between items-center flex-wrap gap-2">
+                <h3 className="text-xl text-wood-brown mb-2 font-general">
+                    Rabas + Stella
                 </h3>
-                <span className="text-wood-brown text-lg font-semibold">
-                $19.900
+                <span className="text-wood-brown text-lg font-general whitespace-nowrap">
+                    $19.900
                 </span>
-            </div>
-            <p className="text-gray-700 text-sm mt-2">
+                </div>
+                <p className="text-gray-700 text-sm mt-2 font-general">
                 Porción de rabas + Stella o limonada grande
-            </p>
+                </p>
             </div>
 
-            <div className="bg-soft-beige p-4 rounded-xl shadow-md hover:shadow-lg transition">
-            <div className="flex justify-between items-center">
-                <h3 className="text-xl font-semibold text-wood-brown mb-2">
-                Menú File de Merluza
+            {/* Producto 2 */}
+            <div className="bg-soft-beige p-4 rounded-xl shadow-md hover:shadow-lg transition snap-start">
+                <div className="flex justify-between items-center flex-wrap gap-2">
+                <h3 className="text-xl font-general text-wood-brown mb-2">
+                    Menú File de Merluza
                 </h3>
-                <span className="text-wood-brown text-lg font-semibold">
-                $16.000
+                <span className="text-wood-brown text-lg font-general whitespace-nowrap">
+                    $16.000
                 </span>
-            </div>
-            <p className="text-gray-700 text-sm mt-2">
+                </div>
+                <p className="text-gray-700 text-sm mt-2 font-general">
                 File de merluza + guarnición + bebida + postre
-            </p>
+                </p>
+            </div>
+
+            {/* Producto 3 - Nuevo: Menú de Milanesa */}
+            <div className="bg-soft-beige p-4 rounded-xl shadow-md hover:shadow-lg transition snap-start">
+                <div className="flex justify-between items-center flex-wrap gap-2">
+                <h3 className="text-xl font-general text-wood-brown mb-2">
+                    Menú de Milanesa
+                </h3>
+                <span className="text-wood-brown text-lg font-general whitespace-nowrap">
+                    $15.500
+                </span>
+                </div> 
+                <p className="text-gray-700 text-sm mt-2 font-general">
+                Milanesa de carne o pollo + papas fritas + bebida
+                </p>
+            </div>
+
+            {/* Producto 4 - Nuevo: Menú de Pastas */}
+            <div className="bg-soft-beige p-4 rounded-xl shadow-md hover:shadow-lg transition snap-start">
+                <div className="flex justify-between items-center flex-wrap gap-2">
+                <h3 className="text-xl font-general text-wood-brown mb-2">
+                    Menú de Pastas
+                </h3>
+                <span className="text-wood-brown text-lg font-general whitespace-nowrap">
+                    $17.800
+                </span>
+                </div>
+                <p className="text-gray-700 text-sm mt-2 font-general">
+                Pastas caseras + salsa a elección + bebida incluida
+                </p>
             </div>
             </div>
         </div>
@@ -68,16 +102,23 @@ const Home = () => {
 
         {/* Carruseles secundarios */}
         <div className="lg:col-span-3 mt-10">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+        {/* Título Surf Club */}
+            <h2 className="text-center font-surfClub text-3xl text-wood-brown font-bold mb-6">
+            Surf Club
+            </h2>
+
+            {/* Grid de las cards */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 bg-soft-beige p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300">
             
-            {/* U Natural */}
-            <CardLink to="/surfclub" title="U Natural">
-                <Carousel images={[natural1, natural2, natural3]} />
+            {/* Clases de Surf */}
+            <CardLink to="/surfclub" title="Clases de Surf" font="font-surfClub">
+                <Carousel images={[surf1, surf2, surf3]} />
             </CardLink>
 
-            {/* Clases de Surf */}
-            <CardLink to="/surfclub" title="Clases de Surf">
-                <Carousel images={[surf1, surf2, surf3]} />
+            {/* U Natural */}
+            <CardLink to="/surfclub" title="U Natural" font="font-surfClub">
+                <Carousel images={[natural1, natural2, natural3]} />
             </CardLink>
 
             </div>

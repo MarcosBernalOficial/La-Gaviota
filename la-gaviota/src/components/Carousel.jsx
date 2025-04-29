@@ -10,7 +10,7 @@ const Carousel = ({ images }) => {
         slidesPerView={1}
         loop={false}
         autoplay={{
-            delay: 2500,
+            delay: 5000,
             disableOnInteraction: false,
         }}
         onReachEnd={(swiper) => {

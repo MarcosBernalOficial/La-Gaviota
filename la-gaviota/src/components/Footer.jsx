@@ -1,7 +1,7 @@
 const Footer = () => {
     return (
-    <footer className="bg-wood-brown text-center text-soft-beige p-2">
-        Todos los derechos son reservados
+    <footer className="bg-wood-brown text-center text-soft-beige p-4 font-general">
+        Todos los derechos son reservados <br /> La Gaviota Ⓒ 
     </footer>
     );
 };

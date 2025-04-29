@@ -2,12 +2,12 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
     return (
-        <header className="bg-wood-brown text-soft-beige p-4 flex justify-between items-center">
+        <header className="hidden md:flex bg-wood-brown text-soft-beige p-7 flex justify-between items-center">
         <Link to="/" className="font-title text-3xl">La Gaviota</Link>
         <nav className="flex gap-6">
-            <Link to="/surfclub">Surf Club</Link>
-            <Link to="/eventos">Eventos</Link>
-            <Link to="/menu">Menú</Link>
+            <Link to="/surfclub" className="font-title" >Surf Club</Link>
+            <Link to="/eventos" className="font-title">Eventos</Link>
+            <Link to="/menu" className="font-title">Menú</Link>
         </nav>
         </header>
     );
