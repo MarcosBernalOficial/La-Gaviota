@@ -15,6 +15,9 @@ export default {
         eventos: ['"recia"', 'sans-serif'],
         menu: ['"gambarino"', 'sans-serif'],
       },
+      scrollMargin: {
+        45: '13rem',
+      },
     },
   },
   plugins: [],

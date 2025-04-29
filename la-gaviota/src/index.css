@@ -71,3 +71,26 @@ body::-webkit-scrollbar {
   font-weight: 400;
   font-style: normal;
 }
+
+/* Scrollbar para el nav horizontal */
+.nav-scroll::-webkit-scrollbar {
+  height: 6px;
+}
+
+.nav-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.nav-scroll::-webkit-scrollbar-thumb {
+  background-color: #5c4033; /* wood-brown oscuro */
+  border-radius: 4px;
+}
+
+.nav-scroll {
+  scrollbar-color: #5c4033 transparent;
+  scrollbar-width: thin;
+}
+
+html {
+  scroll-behavior: smooth;
+}
