@@ -26,6 +26,30 @@ const Home = () => {
             </CardLink>
         </div>
 
+        {/* Carruseles secundarios */}
+        <div className="lg:col-span-3 mt-10">
+
+        {/* Título Surf Club */}
+            <h2 className="text-center font-surfClub text-3xl text-wood-brown font-bold mb-6">
+            Surf Club
+            </h2>
+
+            {/* Grid de las cards */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 bg-soft-beige p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300">
+            
+            {/* Clases de Surf */}
+            <CardLink to="/surfclub" title="Clases de Surf" font="font-surfClub">
+                <Carousel images={[surf1, surf2, surf3]} />
+            </CardLink>
+
+            {/* U Natural */}
+            <CardLink to="/surfclub" title="U Natural" font="font-surfClub">
+                <Carousel images={[natural1, natural2, natural3]} />
+            </CardLink>
+
+            </div>
+        </div>
+
         {/* Menú Promociones */}
         <Link
         to="/menu"
@@ -98,31 +122,6 @@ const Home = () => {
             </div>
         </div>
         </Link>
-
-
-        {/* Carruseles secundarios */}
-        <div className="lg:col-span-3 mt-10">
-
-        {/* Título Surf Club */}
-            <h2 className="text-center font-surfClub text-3xl text-wood-brown font-bold mb-6">
-            Surf Club
-            </h2>
-
-            {/* Grid de las cards */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 bg-soft-beige p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300">
-            
-            {/* Clases de Surf */}
-            <CardLink to="/surfclub" title="Clases de Surf" font="font-surfClub">
-                <Carousel images={[surf1, surf2, surf3]} />
-            </CardLink>
-
-            {/* U Natural */}
-            <CardLink to="/surfclub" title="U Natural" font="font-surfClub">
-                <Carousel images={[natural1, natural2, natural3]} />
-            </CardLink>
-
-            </div>
-        </div>
         </div>
     );
 };

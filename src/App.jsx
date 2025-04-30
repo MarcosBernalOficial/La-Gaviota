@@ -9,7 +9,7 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/La-Gaviota">
       <Navbar />
       <div className=" flex flex-col min-h-screen">
         <Header />
