@@ -35,21 +35,21 @@ const Home = () => {
     return (
         <div className="px-6 max-w-7xl mx-auto space-y-12">
 
-            {/* Portada con carruseles en collage */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
-                <div className="col-span-2 md:col-span-2 row-span-2 h-64 rounded-xl overflow-hidden shadow-lg">
+            {/* Collage Responsive con Carouseles */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 mt-6">
+                <div className="rounded-xl overflow-hidden shadow-lg col-span-1 sm:col-span-2 md:col-span-2">
                     <Carousel images={[surf1, surf2, surf3]} />
                 </div>
-                <div className="h-32 rounded-xl overflow-hidden shadow hidden md:block">
+                <div className="rounded-xl overflow-hidden shadow hidden sm:block">
                     <Carousel images={[natural1, natural2]} />
                 </div>
-                <div className="h-32 rounded-xl overflow-hidden shadow">
+                <div className="rounded-xl overflow-hidden shadow">
                     <Carousel images={[evento1, evento2]} />
                 </div>
-                <div className="h-32 rounded-xl overflow-hidden shadow hidden md:block">
+                <div className="rounded-xl overflow-hidden shadow hidden md:block">
                     <Carousel images={[surf2, surf3]} />
                 </div>
-                <div className="h-32 rounded-xl overflow-hidden shadow hidden md:block">
+                <div className="rounded-xl overflow-hidden shadow hidden md:block">
                     <Carousel images={[natural2, natural3]} />
                 </div>
             </div>
