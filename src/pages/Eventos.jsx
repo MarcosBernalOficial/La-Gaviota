@@ -4,7 +4,7 @@ import Carousel from "../components/Carousel";
 // FORMAL - DÍA
 import eventoFD1 from "../assets/images/evento-formal-1-dia.jpg";
 import eventoFD2 from "../assets/images/evento-formal-2-dia.jpg";
-import eventoFD3 from "../assets/images/evento-formal-3dia.jpg"; // nombre original tiene mal puesto el guión
+import eventoFD3 from "../assets/images/evento-formal-3dia.jpg";
 import eventoFD4 from "../assets/images/evento-formal-4-dia.jpg";
 import eventoFD5 from "../assets/images/evento-formal-5-dia.jpg";
 import eventoFD6 from "../assets/images/evento-formal-6-dia.jpg";
@@ -32,8 +32,10 @@ const Eventos = () => {
     const [informalTime, setInformalTime] = useState("day");
     const [lightboxContent, setLightboxContent] = useState(null);
 
-    const formalImages = formalTime === "day" ? [eventoFD1, eventoFD2, eventoFD3, eventoFD4, eventoFD5, eventoFD6] : [eventoFD1, eventoFD2, eventoFD3, eventoFD4, eventoFD5, eventoFD6];
-    const informalImages = informalTime === "day" ? [eventoID1, eventoID2, eventoID3, eventoID4, eventoID5, eventoID6] : [eventoIN1, eventoIN2, eventoIN3, eventoIN4, eventoIN5, eventoIN6];
+    const formalImages = [eventoFD1, eventoFD2, eventoFD3, eventoFD4, eventoFD5, eventoFD6];
+    const informalImages = informalTime === "day"
+        ? [eventoID1, eventoID2, eventoID3, eventoID4, eventoID5, eventoID6]
+        : [eventoIN1, eventoIN2, eventoIN3, eventoIN4, eventoIN5, eventoIN6];
     const collageImages = [eventoFD1, eventoIN3, eventoIN5, eventoFD3];
 
     return (
@@ -65,8 +67,8 @@ const Eventos = () => {
                 </p>
             </div>
 
-            {/* Collage de fotos */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
+            {/* Collage de fotos con efectos especiales */}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12 animate-fadeIn">
                 {collageImages.map((img, i) => (
                     <img
                         key={i}
@@ -81,18 +83,22 @@ const Eventos = () => {
                                 />
                             )
                         }
-                        className="rounded-xl object-cover w-full h-72 md:h-96 cursor-pointer hover:scale-105 transition"
+                        className={`rounded-xl object-cover w-full h-72 md:h-96 cursor-pointer transition duration-500 ease-in-out
+                        ${i === 0 || i === 1 || i === 2 || i === 3
+                                ? "hover:scale-110 hover:shadow-2xl"
+                                : "hover:scale-105 hover:shadow-md"
+                            }`}
                     />
                 ))}
             </div>
 
             {/* Eventos Formales */}
-            <section className="mb-16">
+            <section className="mb-16 animate-fadeIn">
                 <h2 className="text-3xl font-bold font-eventos text-center text-wood-brown mb-6">
                     Eventos Formales
                 </h2>
                 <div
-                    className="cursor-pointer"
+                    className="cursor-pointer max-w-2xl mx-auto rounded-xl overflow-hidden shadow-md"
                     onClick={() =>
                         setLightboxContent(
                             <div className="h-[70vh]">
@@ -101,82 +107,76 @@ const Eventos = () => {
                         )
                     }
                 >
-                    <Carousel images={formalImages} />
+                    <div className="w-full">
+                        <Carousel images={formalImages} />
+                    </div>
                 </div>
                 <p className="text-center text-gray-700 mt-4 max-w-2xl mx-auto">
                     Nuestros eventos formales son ideales para bodas, aniversarios y celebraciones especiales. Capacidad: hasta 150 personas.
                 </p>
                 <div className="flex justify-center mt-4 gap-4">
-                    <button
-                        onClick={() => setFormalTime("day")}
-                        className={`px-4 py-2 rounded-full ${formalTime === "day"
-                            ? "bg-wood-brown text-soft-beige"
-                            : "bg-soft-beige text-wood-brown border"
+                    {["day", "night"].map((time) => (
+                        <button
+                            key={time}
+                            onClick={() => setFormalTime(time)}
+                            className={`px-5 py-2 rounded-full font-semibold transform transition-all duration-300 ${
+                                formalTime === time
+                                    ? "bg-wood-brown text-soft-beige scale-105 shadow-md"
+                                    : "bg-soft-beige text-wood-brown border hover:scale-105 hover:shadow"
                             }`}
-                    >
-                        Ver Día
-                    </button>
-                    <button
-                        onClick={() => setFormalTime("night")}
-                        className={`px-4 py-2 rounded-full ${formalTime === "night"
-                            ? "bg-wood-brown text-soft-beige"
-                            : "bg-soft-beige text-wood-brown border"
-                            }`}
-                    >
-                        Ver Noche
-                    </button>
+                        >
+                            Ver {time === "day" ? "Día" : "Noche"}
+                        </button>
+                    ))}
                 </div>
             </section>
 
             {/* Eventos Informales */}
-            <section className="mb-16">
+            <section className="mb-16 animate-fadeIn">
                 <h2 className="text-3xl font-bold font-eventos text-center text-wood-brown mb-6">
                     Eventos Informales
                 </h2>
                 <div
-                    className="cursor-pointer"
+                    className="cursor-pointer max-w-2xl mx-auto rounded-xl overflow-hidden shadow-md"
                     onClick={() =>
                         setLightboxContent(
-                            <div className="h-[70vh]">
+                            <div className="h-[70vh]  ">
                                 <Carousel images={informalImages} />
                             </div>
                         )
                     }
                 >
-                    <Carousel images={informalImages} />
+                    <div className="w-full h-auto">
+                        <Carousel images={informalImages} />
+                    </div>
                 </div>
                 <p className="text-center text-gray-700 mt-4 max-w-2xl mx-auto">
                     Perfectos para cumpleaños, after office y reuniones con amigos. Capacidad: hasta 200 personas.
                 </p>
                 <div className="flex justify-center mt-4 gap-4">
-                    <button
-                        onClick={() => setInformalTime("day")}
-                        className={`px-4 py-2 rounded-full ${informalTime === "day"
-                            ? "bg-wood-brown text-soft-beige"
-                            : "bg-soft-beige text-wood-brown border"
+                    {["day", "night"].map((time) => (
+                        <button
+                            key={time}
+                            onClick={() => (time)}
+                            className={`px-5 py-2 rounded-full font-semibold transform transition-all duration-300 ${
+                                informalTime === time
+                                    ? "bg-wood-brown text-soft-beige scale-105 shadow-md"
+                                    : "bg-soft-beige text-wood-brown border hover:scale-105 hover:shadow"
                             }`}
-                    >
-                        Ver Día
-                    </button>
-                    <button
-                        onClick={() => setInformalTime("night")}
-                        className={`px-4 py-2 rounded-full ${informalTime === "night"
-                            ? "bg-wood-brown text-soft-beige"
-                            : "bg-soft-beige text-wood-brown border"
-                            }`}
-                    >
-                        Ver Noche
-                    </button>
+                        >
+                            Ver {time === "day" ? "Día" : "Noche"}
+                        </button>
+                    ))}
                 </div>
             </section>
 
             {/* Botón de reserva */}
-            <div className="text-center">
+            <div className="text-center animate-fadeIn">
                 <a
                     href={whatsappLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-block bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-full shadow-lg transition-all"
+                    className="inline-block bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-full shadow-lg transition-all transform hover:scale-105"
                 >
                     Reservar salón vía WhatsApp
                 </a>

@@ -1,6 +1,8 @@
 import { useMobileMenu } from "../context/MenuMobileContext";
 import { Menu, X } from "lucide-react";
 import { Link } from "react-router-dom";
+import { motion, AnimatePresence } from "framer-motion";
+
 
 const Navbar = () => {
     const { isMobileMenuOpen, setIsMobileMenuOpen } = useMobileMenu();
@@ -23,19 +25,29 @@ const Navbar = () => {
             </div>
 
             {/* Menú desplegable con animación */}
-            {isMobileMenuOpen && (
-                <div className="mt-4 animate-slideDown fade-in flex flex-row place-content-evenly items-center gap-4 md:hidden bg-wood-brown rounded-xl shadow p-4 transition-all">
-                    <Link to="/surfclub" onClick={() => setIsMobileMenuOpen(false)} className="text-soft-beige font-medium">
-                        Surf Club
-                    </Link>
-                    <Link to="/eventos" onClick={() => setIsMobileMenuOpen(false)} className="text-soft-beige font-medium">
-                        Eventos
-                    </Link>
-                    <Link to="/menu" onClick={() => setIsMobileMenuOpen(false)} className="text-soft-beige font-medium">
-                        Menú
-                    </Link>
-                </div>
-            )}
+            <AnimatePresence>
+                {isMobileMenuOpen && (
+                    <motion.div
+                        initial={{ opacity: 0, height: 0 }}
+                        animate={{ opacity: 1, height: "auto" }}
+                        exit={{ opacity: 0, height: 0 }}
+                        transition={{ duration: 0.4, ease: "easeInOut" }}
+                        className="mt-4 md:hidden bg-wood-brown rounded-xl shadow px-4 overflow-hidden"
+                    >
+                        <div className="flex flex-row place-content-evenly items-center gap-4 py-4">
+                            <Link to="/surfclub" onClick={() => setIsMobileMenuOpen(false)} className="text-soft-beige font-medium">
+                                Surf Club
+                            </Link>
+                            <Link to="/eventos" onClick={() => setIsMobileMenuOpen(false)} className="text-soft-beige font-medium">
+                                Eventos
+                            </Link>
+                            <Link to="/menu" onClick={() => setIsMobileMenuOpen(false)} className="text-soft-beige font-medium">
+                                Menú
+                            </Link>
+                        </div>
+                    </motion.div>
+                )}
+            </AnimatePresence>
         </nav>
     );
 };
