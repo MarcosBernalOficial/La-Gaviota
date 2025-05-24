@@ -82,7 +82,7 @@ const SurfClub = () => {
                 href={whatsappLink("Clases de Surf")}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block mt-2 bg-wood-brown text-soft-beige px-4 py-2 mt-6 rounded-full"
+                className="inline-block bg-wood-brown text-soft-beige px-4 py-2 mt-6 rounded-full"
                 >
                 Inscripción vía WhatsApp
                 </a>

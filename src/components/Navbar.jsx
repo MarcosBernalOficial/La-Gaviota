@@ -6,7 +6,7 @@ const Navbar = () => {
     const { isMobileMenuOpen, setIsMobileMenuOpen } = useMobileMenu();
 
     return (
-        <nav className="sticky top-0 z-50 block md:hidden bg-soft-beige shadow-md px-6 py-4 relative">
+        <nav className="sticky top-0 z-50 block md:hidden bg-soft-beige shadow-md px-6 py-4">
             <div className="flex items-center justify-between">
                 {/* Título con Link al Home */}
                 <Link to="/" className="mx-auto">
