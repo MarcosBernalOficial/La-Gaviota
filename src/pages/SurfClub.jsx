@@ -1,6 +1,6 @@
 import React from "react";
 import Carousel from "../components/Carousel";
-import profeMaxi from "../assets/profesor-maxi.jpg";
+import profeMaxi from "../assets/images/profesor-maxi.jpg";
 
 const SurfClub = () => {
     const whatsappLink = (actividad) =>

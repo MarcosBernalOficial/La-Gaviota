@@ -1,20 +1,29 @@
 import React, { useState } from "react";
 import Carousel from "../components/Carousel";
 
-import collage1 from "../assets/evento1.jpg";
-import collage2 from "../assets/evento2.jpg";
-import collage3 from "../assets/evento3.jpg";
-import collage4 from "../assets/surf1.jpg";
+// FORMAL - DÍA
+import eventoFD1 from "../assets/images/evento-formal-1-dia.jpg";
+import eventoFD2 from "../assets/images/evento-formal-2-dia.jpg";
+import eventoFD3 from "../assets/images/evento-formal-3dia.jpg"; // nombre original tiene mal puesto el guión
+import eventoFD4 from "../assets/images/evento-formal-4-dia.jpg";
+import eventoFD5 from "../assets/images/evento-formal-5-dia.jpg";
+import eventoFD6 from "../assets/images/evento-formal-6-dia.jpg";
 
-import formalDay1 from "../assets/evento1.jpg";
-import formalDay2 from "../assets/evento2.jpg";
-import formalNight1 from "../assets/evento3.jpg";
-import formalNight2 from "../assets/surf1.jpg";
+// INFORMAL - DÍA
+import eventoID1 from "../assets/images/evento-informal-1-dia.jpg";
+import eventoID2 from "../assets/images/evento-informal-2-dia.jpg";
+import eventoID3 from "../assets/images/evento-informal-3-dia.jpg";
+import eventoID4 from "../assets/images/evento-informal-4-dia.jpg";
+import eventoID5 from "../assets/images/evento-informal-5-dia.jpg";
+import eventoID6 from "../assets/images/evento-informal-6-dia.jpg";
 
-import informalDay1 from "../assets/evento1.jpg";
-import informalDay2 from "../assets/evento2.jpg";
-import informalNight1 from "../assets/evento3.jpg";
-import informalNight2 from "../assets/surf1.jpg";
+// INFORMAL - NOCHE
+import eventoIN1 from "../assets/images/evento-informal-1-noche.jpg";
+import eventoIN2 from "../assets/images/evento-informal-2-noche.jpg";
+import eventoIN3 from "../assets/images/evento-informal-3-noche.jpg";
+import eventoIN4 from "../assets/images/evento-informal-4-noche.jpg";
+import eventoIN5 from "../assets/images/evento-informal-5-noche.jpg";
+import eventoIN6 from "../assets/images/evento-informal-6-noche.jpg";
 
 const whatsappLink = "https://wa.me/542235506245?text=Hola!%20Quisiera%20reservar%20el%20salón%20de%20La%20Gaviota.";
 
@@ -23,9 +32,9 @@ const Eventos = () => {
     const [informalTime, setInformalTime] = useState("day");
     const [lightboxContent, setLightboxContent] = useState(null);
 
-    const formalImages = formalTime === "day" ? [formalDay1, formalDay2] : [formalNight1, formalNight2];
-    const informalImages = informalTime === "day" ? [informalDay1, informalDay2] : [informalNight1, informalNight2];
-    const collageImages = [collage1, collage2, collage3, collage4];
+    const formalImages = formalTime === "day" ? [eventoFD1, eventoFD2, eventoFD3, eventoFD4, eventoFD5, eventoFD6] : [eventoFD1, eventoFD2, eventoFD3, eventoFD4, eventoFD5, eventoFD6];
+    const informalImages = informalTime === "day" ? [eventoID1, eventoID2, eventoID3, eventoID4, eventoID5, eventoID6] : [eventoIN1, eventoIN2, eventoIN3, eventoIN4, eventoIN5, eventoIN6];
+    const collageImages = [eventoFD1, eventoIN3, eventoIN5, eventoFD3];
 
     return (
         <div className="bg-soft-cream min-h-screen px-4 pb-12 pt-6 md:px-10 max-w-7xl mx-auto relative">

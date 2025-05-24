@@ -4,8 +4,8 @@ export default {
   theme: {
     extend: {
       colors: {
-        "wood-brown": "#3C2317",
-        "soft-beige": "#F6E6CB",
+        "wood-brown": "#3E2C1C",
+        "soft-beige": "#ede6d5",
         "forest-green": "#F6E6CB",
       },
       fontFamily: {

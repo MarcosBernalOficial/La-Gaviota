@@ -24,7 +24,7 @@ const Navbar = () => {
 
             {/* Menú desplegable con animación */}
             {isMobileMenuOpen && (
-                <div className="mt-4 animate-slideDown fade-in flex flex-row place-content-evenly items-center gap-4 md:hidden bg-wood-brown/80 rounded-xl shadow p-4 transition-all">
+                <div className="mt-4 animate-slideDown fade-in flex flex-row place-content-evenly items-center gap-4 md:hidden bg-wood-brown rounded-xl shadow p-4 transition-all">
                     <Link to="/surfclub" onClick={() => setIsMobileMenuOpen(false)} className="text-soft-beige font-medium">
                         Surf Club
                     </Link>
