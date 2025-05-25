@@ -27,6 +27,10 @@ import eventoIN4 from "../assets/images/evento-informal-4-noche.jpg";
 import eventoIN5 from "../assets/images/evento-informal-5-noche.jpg";
 import eventoIN6 from "../assets/images/evento-informal-6-noche.jpg";
 
+//ACTIVIDADES
+import surfclub from "../assets/images/SurfClub.jpg";
+import unatural from "../assets/images/Unatural.jpg";
+
 import SplashScreen from "../components/SplashScreen";
 
 const Home = () => {
@@ -34,7 +38,7 @@ const Home = () => {
 
     useEffect(() => {
         const timer = setTimeout(() => {
-            setShowSplash(false);
+        setShowSplash(false);
         }, 2500);
         return () => clearTimeout(timer);
     }, []);
@@ -43,30 +47,76 @@ const Home = () => {
 
     return (
         <div className="px-6 max-w-5xl mx-auto space-y-12">
+        {/* 👉 Sección de eventos */}
+        <div className="max-w-3xl mx-auto">
+            <CardLink to="/eventos" title="Eventos" font="font-eventos">
+            <Carousel
+                images={[
+                eventoFD1, eventoID1, eventoIN1,
+                eventoFD2, eventoID2, eventoIN2,
+                eventoFD3, eventoID3, eventoIN3,
+                eventoFD4, eventoID4, eventoIN4,
+                eventoFD5, eventoID5, eventoIN5,
+                eventoFD6, eventoID6, eventoIN6,
+                ]}
+            />
+            </CardLink>
+        </div>
 
-            {/* Carrusel de eventos */}
-            <div className="max-w-3xl mx-auto">
-                <CardLink to="/eventos" title="Eventos" font="font-eventos">
-                    <Carousel images={[eventoFD1, eventoID1, eventoIN1, eventoFD2, eventoID2, eventoIN2, eventoFD3, eventoID3, eventoIN3, eventoFD4, eventoID4, eventoIN4, eventoFD5, eventoID5, eventoIN5, eventoFD6, eventoID6, eventoIN6]} />
-                </CardLink>
+        {/* 
+        👉 Sección original con carruseles en Surf Club - Comentada por ahora
+        <div>
+            <h2 className="text-center font-surfClub text-3xl text-wood-brown font-bold mb-6">
+            Surf Club
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 bg-soft-beige p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300">
+            <CardLink to="/proximamente" title="Clases de Surf" font="font-surfClub">
+                <Carousel images={[eventoFD1, eventoID1, eventoIN1]} />
+            </CardLink>
+            <CardLink to="/proximamente" title="U Natural" font="font-surfClub">
+                <Carousel images={[eventoFD4, eventoID4, eventoIN4]} />
+            </CardLink>
             </div>
-
-            {/* Surf Club */}
+        </div>
+        */}
+            {/* ✅ Sección "Próximamente disponibles" (ACTIVA) */}
             <div>
-                <h2 className="text-center font-surfClub text-3xl text-wood-brown font-bold mb-6">
-                    Surf Club
-                </h2>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 bg-soft-beige p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300">
-                    <CardLink to="/proximamente" title="Clases de Surf" font="font-surfClub">
-                        <Carousel images={[eventoFD1, eventoID1, eventoIN1]} />
+            <h2 className="text-center font-surfClub text-3xl text-wood-brown font-bold mb-6">
+                Surf Club
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 bg-soft-beige p-6 rounded-2xl transition-all duration-300">
+                {/* Card: Clases de Surf */}
+                <CardLink to="/proximamente" title="Clases de Surf" font="font-surfClub">
+                    <div
+                        className="relative flex items-center justify-center h-48 rounded-xl bg-cover bg-center overflow-hidden"
+                        style={{ backgroundImage: `url(${surfclub})` }}
+                    >
+                        {/* Capa oscura encima de la imagen */}
+                        <div className="absolute inset-0 bg-wood-brown/70"></div>
+
+                        {/* Texto por encima del overlay */}
+                        <p className="relative text-soft-beige font-title text-center text-lg z-10">
+                        Próximamente disponibles
+                        </p>
+                    </div>
                     </CardLink>
+
                     <CardLink to="/proximamente" title="U Natural" font="font-surfClub">
-                        <Carousel images={[eventoFD4, eventoID4, eventoIN4]} />
-                    </CardLink>
+                    <div
+                        className="relative flex items-center justify-center h-48 rounded-xl bg-cover bg-center overflow-hidden"
+                        style={{ backgroundImage: `url(${unatural})` }}
+                    >
+                        <div className="absolute inset-0 bg-wood-brown/70"></div>
+                        <p className="relative text-soft-beige font-title text-center text-lg z-10">
+                        Próximamente disponibles
+                        </p>
+                    </div>
+                </CardLink>
+
                 </div>
             </div>
 
-            
+
         </div>
     );
 };

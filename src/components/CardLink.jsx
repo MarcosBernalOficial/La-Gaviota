@@ -7,7 +7,7 @@ const CardLink = ({ to, title, font = "font-title", children }) => {
             className="block relative rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-transform hover:scale-[1.02] duration-300"
         >
             {/* Gradiente arriba */}
-            <div className="absolute inset-0 bg-gradient-to-b from-gray-900/70 via-gray-900/30 to-transparent z-10" />
+            <div className="absolute inset-0 bg-gradient-to-b to-transparent z-10" />
 
             {/* Texto centrado arriba */}
             <div className="absolute top-4 left-1/2 transform -translate-x-1/2 z-20">
