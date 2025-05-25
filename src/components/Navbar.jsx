@@ -35,7 +35,7 @@ const Navbar = () => {
                         className="mt-4 md:hidden bg-wood-brown rounded-xl shadow px-4 overflow-hidden"
                     >
                         <div className="flex flex-row place-content-evenly items-center gap-4 py-4">
-                            <Link to="/surfclub" onClick={() => setIsMobileMenuOpen(false)} className="text-soft-beige font-medium">
+                            <Link to="/proximamente" onClick={() => setIsMobileMenuOpen(false)} className="text-soft-beige font-medium">
                                 Surf Club
                             </Link>
                             <Link to="/eventos" onClick={() => setIsMobileMenuOpen(false)} className="text-soft-beige font-medium">

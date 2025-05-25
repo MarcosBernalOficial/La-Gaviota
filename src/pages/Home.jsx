@@ -42,10 +42,10 @@ const Home = () => {
     if (showSplash) return <SplashScreen />;
 
     return (
-        <div className="px-6 max-w-7xl mx-auto space-y-12">
+        <div className="px-6 max-w-5xl mx-auto space-y-12">
 
             {/* Carrusel de eventos */}
-            <div className="w-full">
+            <div className="max-w-3xl mx-auto">
                 <CardLink to="/eventos" title="Eventos" font="font-eventos">
                     <Carousel images={[eventoFD1, eventoID1, eventoIN1, eventoFD2, eventoID2, eventoIN2, eventoFD3, eventoID3, eventoIN3, eventoFD4, eventoID4, eventoIN4, eventoFD5, eventoID5, eventoIN5, eventoFD6, eventoID6, eventoIN6]} />
                 </CardLink>
@@ -57,10 +57,10 @@ const Home = () => {
                     Surf Club
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 bg-soft-beige p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300">
-                    <CardLink to="/surfclub" title="Clases de Surf" font="font-surfClub">
+                    <CardLink to="/proximamente" title="Clases de Surf" font="font-surfClub">
                         <Carousel images={[eventoFD1, eventoID1, eventoIN1]} />
                     </CardLink>
-                    <CardLink to="/surfclub" title="U Natural" font="font-surfClub">
+                    <CardLink to="/proximamente" title="U Natural" font="font-surfClub">
                         <Carousel images={[eventoFD4, eventoID4, eventoIN4]} />
                     </CardLink>
                 </div>

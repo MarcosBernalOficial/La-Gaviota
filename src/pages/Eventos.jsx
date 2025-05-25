@@ -28,7 +28,6 @@ import eventoIN6 from "../assets/images/evento-informal-6-noche.jpg";
 const whatsappLink = "https://wa.me/542235506245?text=Hola!%20Quisiera%20reservar%20el%20salón%20de%20La%20Gaviota.";
 
 const Eventos = () => {
-    const [formalTime, setFormalTime] = useState("day");
     const [informalTime, setInformalTime] = useState("day");
     const [lightboxContent, setLightboxContent] = useState(null);
 
@@ -67,8 +66,8 @@ const Eventos = () => {
                 </p>
             </div>
 
-            {/* Collage de fotos con efectos especiales */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12 animate-fadeIn">
+            {/* Collage */}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
                 {collageImages.map((img, i) => (
                     <img
                         key={i}
@@ -83,11 +82,7 @@ const Eventos = () => {
                                 />
                             )
                         }
-                        className={`rounded-xl object-cover w-full h-72 md:h-96 cursor-pointer transition duration-500 ease-in-out
-                        ${i === 0 || i === 1 || i === 2 || i === 3
-                                ? "hover:scale-110 hover:shadow-2xl"
-                                : "hover:scale-105 hover:shadow-md"
-                            }`}
+                        className={`rounded-xl object-cover w-full h-72 md:h-96 cursor-pointer transition duration-500 ease-in-out`}
                     />
                 ))}
             </div>
@@ -114,21 +109,6 @@ const Eventos = () => {
                 <p className="text-center text-gray-700 mt-4 max-w-2xl mx-auto">
                     Nuestros eventos formales son ideales para bodas, aniversarios y celebraciones especiales. Capacidad: hasta 150 personas.
                 </p>
-                <div className="flex justify-center mt-4 gap-4">
-                    {["day", "night"].map((time) => (
-                        <button
-                            key={time}
-                            onClick={() => setFormalTime(time)}
-                            className={`px-5 py-2 rounded-full font-semibold transform transition-all duration-300 ${
-                                formalTime === time
-                                    ? "bg-wood-brown text-soft-beige scale-105 shadow-md"
-                                    : "bg-soft-beige text-wood-brown border hover:scale-105 hover:shadow"
-                            }`}
-                        >
-                            Ver {time === "day" ? "Día" : "Noche"}
-                        </button>
-                    ))}
-                </div>
             </section>
 
             {/* Eventos Informales */}
@@ -140,7 +120,7 @@ const Eventos = () => {
                     className="cursor-pointer max-w-2xl mx-auto rounded-xl overflow-hidden shadow-md"
                     onClick={() =>
                         setLightboxContent(
-                            <div className="h-[70vh]  ">
+                            <div className="h-[70vh]">
                                 <Carousel images={informalImages} />
                             </div>
                         )
@@ -157,14 +137,14 @@ const Eventos = () => {
                     {["day", "night"].map((time) => (
                         <button
                             key={time}
-                            onClick={() => (time)}
+                            onClick={() => setInformalTime(time)}
                             className={`px-5 py-2 rounded-full font-semibold transform transition-all duration-300 ${
                                 informalTime === time
                                     ? "bg-wood-brown text-soft-beige scale-105 shadow-md"
                                     : "bg-soft-beige text-wood-brown border hover:scale-105 hover:shadow"
                             }`}
                         >
-                            Ver {time === "day" ? "Día" : "Noche"}
+                            Ver de {time === "day" ? "Día" : "Noche"}
                         </button>
                     ))}
                 </div>

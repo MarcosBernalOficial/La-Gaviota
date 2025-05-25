@@ -33,15 +33,13 @@ const SurfClub = () => {
                     Ideales para quienes recién comienzan o desean perfeccionar técnicas específicas.
                     La atención es personalizada y se adapta al ritmo del alumno.
                 </p>
-                <p className="text-wood-brown text-center mt-2 font-semibold">$9.000 por persona</p>
                 </div>
                 <div className="bg-soft-cream rounded-lg p-4 shadow-inner">
                 <h4 className="text-xl font-bold text-wood-brown mb-2 text-center">Grupales</h4>
                 <p className="text-gray-800 text-sm">
-                    Perfectas para disfrutar en compañía. Se trabaja en grupo con consignas dinámicas
-                    que fomentan el espíritu de equipo y la diversión.
+                    Perfectas para disfrutar un momento de desconexion y compañía. Se trabaja en grupo con consignas dinámicas
+                    que fomentan el espíritu de equipo y la diversión del surf.
                 </p>
-                <p className="text-wood-brown text-center mt-2 font-semibold">$6.500 por persona</p>
                 </div>
             </div>
             </div>
@@ -56,11 +54,11 @@ const SurfClub = () => {
                 <img
                     src={profeMaxi}
                     alt="Profesor Maxi"
-                    className="w-20 h-20 rounded-full object-cover shadow"
+                    className="w-20 h-20 rounded-lg object-cover shadow"
                 />
                 <div>
                     <h4 className="font-semibold text-wood-brown">Máximo Bernal</h4>
-                    <p className="text-sm text-gray-700">10 años de experiencia. Ex competidor nacional.</p>
+                    <p className="text-sm text-gray-700">Surfer desde chico<br/>5 años de instructor<br/>Guardavidas</p>
                 </div>
                 </div>
                 <div className="flex items-center gap-4">
@@ -71,7 +69,7 @@ const SurfClub = () => {
                 />
                 <div>
                     <h4 className="font-semibold text-wood-brown">Juano</h4>
-                    <p className="text-sm text-gray-700">Instructora certificada ISA. Estilo relajado y técnico.</p>
+                    <p className="text-sm text-gray-700">Surfer <br/> 3 años de Instructor <br/>  </p>
                 </div>
                 </div>
             </div>
