@@ -7,6 +7,8 @@ import Menu from "./pages/Menu";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Proximamente from "./components/Proximamente";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 function App() {
   return (
@@ -14,7 +16,7 @@ function App() {
       <Navbar />
       <div className=" flex flex-col min-h-screen">
         <Header />
-        <main className="flex-grow bg-soft-beige p-4">
+        <main className="flex-grow bg-soft-beige">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/surfclub" element={<SurfClub />} />
