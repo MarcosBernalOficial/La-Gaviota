@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import Carousel from "../components/Carousel";
 import VideoCarousel from "../components/VideoCarousel";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 
 // FORMAL - DÍA
 import eventoFD1 from "../assets/images/evento-formal-1-dia.jpg";
