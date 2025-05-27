@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Carousel from "../components/Carousel";
+import VideoCarousel from "../components/VideoCarousel";
 
 // FORMAL - DÍA
 import eventoFD1 from "../assets/images/evento-formal-1-dia.jpg";
@@ -25,6 +26,10 @@ import eventoIN4 from "../assets/images/evento-informal-4-noche.jpg";
 import eventoIN5 from "../assets/images/evento-informal-5-noche.jpg";
 import eventoIN6 from "../assets/images/evento-informal-6-noche.jpg";
 
+// VIDEOS - EVENTOS 
+import video1 from '../assets/videos/Evento-Dia.mp4';
+import video2 from '../assets/videos/Evento-Noche.mp4';
+
 const whatsappLink = "https://wa.me/542235506245?text=Hola!%20Quisiera%20reservar%20el%20salón%20de%20La%20Gaviota.";
 
 const Eventos = () => {
@@ -36,25 +41,14 @@ const Eventos = () => {
         ? [eventoID1, eventoID2, eventoID3, eventoID4, eventoID5, eventoID6]
         : [eventoIN1, eventoIN2, eventoIN3, eventoIN4, eventoIN5, eventoIN6];
     const collageImages = [eventoFD1, eventoIN3, eventoIN5, eventoFD3];
+    const videos = [video1, video2];
 
     return (
-        <div className="bg-soft-cream min-h-screen px-4 pb-12 pt-6 md:px-10 max-w-7xl mx-auto relative">
-            {/* Lightbox */}
-            {lightboxContent && (
-                <div className="fixed inset-0 bg-wood-brown/80 flex justify-center items-center z-50">
-                    <button
-                        onClick={() => setLightboxContent(null)}
-                        className="absolute top-4 right-4 bg-wood-brown/60 text-soft-beige p-2 rounded-full shadow hover:scale-110 transition"
-                    >
-                        ✕
-                    </button>
-                    <div className="max-w-3xl w-full px-4">
-                        <div className="rounded-xl overflow-hidden">
-                            {lightboxContent}
-                        </div>
-                    </div>
-                </div>
-            )}
+        <div className="bg-soft-cream min-h-screen pb-12 pt-0 md:px-10 max-w-7xl mx-auto relative">
+            {/* Carrusel de Videos */}
+            <div className="my-12">
+                <VideoCarousel videos={videos} />
+            </div>
 
             {/* Bienvenida */}
             <div className="text-center mb-12 animate-fadeIn">
@@ -65,30 +59,8 @@ const Eventos = () => {
                     Descubrí cómo transformamos cada momento en un recuerdo inolvidable, desde encuentros íntimos hasta celebraciones vibrantes frente al mar.
                 </p>
             </div>
-
-            {/* Collage */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
-                {collageImages.map((img, i) => (
-                    <img
-                        key={i}
-                        src={img}
-                        alt={`Evento ${i + 1}`}
-                        onClick={() =>
-                            setLightboxContent(
-                                <img
-                                    src={img}
-                                    alt={`Evento ${i + 1}`}
-                                    className="w-full h-[70vh] object-cover rounded-xl"
-                                />
-                            )
-                        }
-                        className={`rounded-xl object-cover w-full h-72 md:h-96 cursor-pointer transition duration-500 ease-in-out`}
-                    />
-                ))}
-            </div>
-
             {/* Eventos Formales */}
-            <section className="mb-16 animate-fadeIn">
+            <section className="m-8 animate-fadeIn">
                 <h2 className="text-3xl font-bold font-eventos text-center text-wood-brown mb-6">
                     Eventos Formales
                 </h2>
@@ -102,9 +74,7 @@ const Eventos = () => {
                         )
                     }
                 >
-                    <div className="w-full">
-                        <Carousel images={formalImages} />
-                    </div>
+                    <Carousel images={formalImages} />
                 </div>
                 <p className="text-center text-gray-700 mt-4 max-w-2xl mx-auto">
                     Nuestros eventos formales son ideales para bodas, aniversarios y celebraciones especiales. Capacidad: hasta 150 personas.
@@ -112,7 +82,7 @@ const Eventos = () => {
             </section>
 
             {/* Eventos Informales */}
-            <section className="mb-16 animate-fadeIn">
+            <section className="m-8 animate-fadeIn">
                 <h2 className="text-3xl font-bold font-eventos text-center text-wood-brown mb-6">
                     Eventos Informales
                 </h2>
@@ -126,9 +96,7 @@ const Eventos = () => {
                         )
                     }
                 >
-                    <div className="w-full h-auto">
-                        <Carousel images={informalImages} />
-                    </div>
+                    <Carousel images={informalImages} />
                 </div>
                 <p className="text-center text-gray-700 mt-4 max-w-2xl mx-auto">
                     Perfectos para cumpleaños, after office y reuniones con amigos. Capacidad: hasta 200 personas.

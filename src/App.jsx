@@ -7,6 +7,7 @@ import Menu from "./pages/Menu";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Proximamente from "./components/Proximamente";
+import About from "./pages/About";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -23,6 +24,7 @@ function App() {
             <Route path="/eventos" element={<Eventos />} />
             <Route path="/menu" element={<Menu />} />
             <Route path="/proximamente" element={<Proximamente />} />
+            <Route path="/sobreNosotros" element={<About />} />
           </Routes>
         </main>
         <Footer />

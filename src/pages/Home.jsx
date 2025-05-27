@@ -13,12 +13,12 @@ export default function Home() {
     return (
         <div className="w-full">
         {/* Carousel de card links */}
-        <Carousel />
         
         <VideoSection videoSrc={video1} showButton={false} fullScreen={false} />
         <VideoSection videoSrc={video2} showButton={false} fullScreen={false} />
         <VideoSection videoSrc={video3} showButton={false} fullScreen={false} />
         <VideoSection videoSrc={video4} showButton={false} fullScreen={false} />
+        <Carousel />
         </div>
     );
 }

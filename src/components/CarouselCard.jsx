@@ -10,12 +10,13 @@ import "slick-carousel/slick/slick-theme.css";
 import eventosBg from "../assets/images/evento-formal-2-dia.jpg";
 import surfclubBg from "../assets/images/Surfclub.jpg";
 import unaturalBg from "../assets/images/Unatural.jpg";
+import SobreNosotros from "../assets/images/SobreNosotros.png";
 
 // Datos de las tarjetas
 const cardLinks = [
     { title: "Eventos", link: "/eventos", image: eventosBg },
     { title: "Surfclub", link: "/surfclub", image: surfclubBg },
-    { title: "Unatural", link: "/unatural", image: unaturalBg },
+    { title: "UNatural", link: "/surfclub", image: unaturalBg },
 ];
 
 export default function CarouselCard() {
@@ -32,15 +33,15 @@ export default function CarouselCard() {
     };
 
     return (
-        <div className="my-8 px-4 max-w-3xl mx-auto">
+        <div className="my-8 max-w-xl mx-auto">
             <Slider {...settings}>
                 {cardLinks.map((card, index) => (
-                    <div key={index} className="p-4">
-                        <Link to={card.link} className="block bg-soft-beige rounded overflow-hidden shadow-md">
+                    <div key={index} className="">
+                        <Link to={card.link} className="block bg-soft-beige overflow-hidden shadow-md">
                             <img
                                 src={card.image}
                                 alt={card.title}
-                                className="w-full object-cover rounded-t-xl"
+                                className="w-full object-cover"
                                 style={{ maxHeight: "250px", height: "auto" }}
                             />
                             <div className="p-4 text-center font-bold text-wood-brown text-xl font-title">
