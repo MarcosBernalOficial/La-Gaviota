@@ -7,13 +7,14 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 // Imágenes importadas
+import Menu from "../assets/images/menu.jpg";
 import eventosBg from "../assets/images/evento-formal-2-dia.jpg";
 import surfclubBg from "../assets/images/Surfclub.jpg";
 import unaturalBg from "../assets/images/Unatural.jpg";
-import SobreNosotros from "../assets/images/SobreNosotros.png";
 
 // Datos de las tarjetas
 const cardLinks = [
+    { title: "Menú", link: "/menu", image: Menu },
     { title: "Eventos", link: "/eventos", image: eventosBg },
     { title: "Surfclub", link: "/surfclub", image: surfclubBg },
     { title: "UNatural", link: "/surfclub", image: unaturalBg },

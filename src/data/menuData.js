@@ -1,30 +1,96 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
-import { useMobileMenu } from "../context/MenuMobileContext";
+// src/data/menuData.js
 
-const categories = [
-    "Promociones",
-    "Entradas",
-    "Ensaladas",
-    "Frituras",
-    "Frituras para compartir",
-    "Minutas Porciones",
-    "Sandwich Frío",
-    "Sandwich Caliente",
-    "Minutas",
-    "Pescados",
-    "Salsas para pescados",
-    "Pastas Caseras",
-    "Salsas para pastas",
-    "Menú Infantil",
-    "Postres",
-    "Bebidas sin alcohol",
-    "Bebidas con alcohol",
-    "Aperitivos",
-    "Vinos"
-];
-
-const menuData = {
+export const menuData = {
+    "Cafetería Caliente": [
+        {"name": "Espresso", "price": 2800, "description": "Espresso."},
+        {"name": "Americano", "price": 2800, "description": "Espresso + agua."},
+        {"name": "Long Black", "price": 3600, "description": "Doble espresso + agua."},
+        {"name": "Doppio", "price": 3600, "description": "Doble espresso."},
+        {"name": "Cortado", "price": 2800, "description": "Espresso + leche."},
+        {"name": "Lágrima", "price": 2800, "description": "Leche + gota de café."},
+        {"name": "Lágrima doble", "price": 3600, "description": "Leche + 1/2 espresso."},
+        {"name": "Latte", "price": 3600, "description": "Doble espresso + leche."},
+        {"name": "Cappuccino", "price": 5000, "description": "Espresso + leche + chocolate, opcional canela."},
+        {"name": "Mocha Coffee", "price": 5000, "description": "Espresso + leche + chocolate."},
+        {"name": "Cafe Irlandes", "price": 5000, "description": "Espresso + whisky + canela."},
+        {"name": "Submarino", "price": 5000, "description": "Leche + Barra de chocolate."},
+        {"name": "Chocolatada caliente", "price": 3500}
+    ],
+    "Cafetería Fria": [
+        {"name": "Ice Latte", "price": 3600, "description": "Espresso + leche + hielo."},
+        {"name": "Frapucchino", "price": 5000, "description": "Espresso + leche + chocolate + hielo. (Opcional canela)."},
+        {"name": "Chocolatada Fría", "price": 3600},
+        {"name": "Adicional Crema", "price": 1200}
+    ],
+    "Latte Time": [
+        {"name": "Media Luna + Infusión", "price": 4000, "description": "Café o té."},
+        {"name": "Porción de Budín + Infusión", "price": 4000, "description": "Café o té."},
+        {"name": "Brownie + Infusión", "price": 4500, "description": "Café o té."},
+        {"name": "Waffle dulce de leche + infusion", "price": 7500},
+        {"name": "Waffle con crema y frutos rojos + jugo exprimido o licuado", "price": 8500},
+        {"name": "Waffle Capresse + infusion", "price": 8500, "description": "mozzarella, tomate, albaca"},
+        {"name": "Waffle de JyQ + infusion", "price": 8500, "description": "jamon y queso"},
+        {"name": "Kit Kids", "price": 4500, "description": "Chocolatada + 2 ½ lunas."}
+    ],
+    "Carta de Té": [
+        {"name": "Blend Gaviota", "price": 3500, "description": "Bayas de sauco, arándanos, rosa mosqueta, naranjas sanguinas y papaya."},
+        {"name": "Calm", "price": 3500, "description": "Hojas de verbena, cascaritas de naranja y clementinas."},
+        {"name": "Oriental Summer", "price": 3500, "description": "Té verde, duraznos, manzanas, rosa mosqueta y pétalos."},
+        {"name": "English Breakfast", "price": 3500, "description": "Blend de cosechas premium de India, Ceylon y China."},
+        {"name": "After 5'", "price": 3500, "description": "Té negro, chocolate y menta."},
+        {"name": "Earl Great", "price": 3500, "description": "Hebras perfumadas con naranja, limón y bergamota."},
+        {"name": "Gaviota Chai", "price": 3500, "description": "Especias, manzana, vainilla y cacao."}
+    ],
+    "Mini Tortas": [
+            {"name": "Tiramisú", "price": 5500},
+            {"name": "Cheesecake", "price": 6000},
+            {"name": "Lemon Pie", "price": 5500},
+            {"name": "Brownie con Crema y Frutillas", "price": 6500},
+            {"name": "Chocotorta", "price": 6000},
+            {"name": "Volcán de Chocolate", "price": 6500},
+            {"name": "Budín de Limón y Amapolas", "price": 4000},
+            {"name": "Budín de Carrot con Frosting de Queso", "price": 4800},
+            {"name": "Porción de Torta", "price": 6000},
+            {"name": "Scon de limon", "price": 2500},
+            {"name": "Media Luna", "price": 1000, "description": "Dulce o Salada."},
+            {"name": "Media Luna Con Jamón y Queso", "price": 2800, "description": "Dulce o Salada."}
+    ],
+    "Desayunos": [
+        {"name": "Porción de Tostadas Acompañadas con Queso Crema y Mermelada de Estación", "price": 4500},
+        {"name": "Porción de Tostadas Acompañadas con Queso Crema y Mermelada de Estación + Infusión", "price": 6900, "description": "Café - Té."},
+        {"name": "Porción de Tostadas Acompañadas con Queso Crema y Mermelada de Estación + Infusión + Jugo Exprimido", "price": 9000, "description": "Café - Té."},
+        {"name": "Porción de Tostadas Acompañadas con Queso Crema y Mermelada de Estación + Jugo Natural Verde (Pepino, Apio y Manzana Verde)", "price": 9000},
+        {"name": "Tostado de Miga con Jamón & Queso", "price": 7500},
+        {"name": "Tostado Pan Frances con Jamón & Queso", "price": 7500},
+        {"name": "Tostado de Miga con Jamón & Queso + Infusión", "price": 9000, "description": "Café - Té."},
+        {"name": "Tostón de Pan Blanco o Integral con Queso Crema, Palta, Tomate y Semillas", "price": 7500},
+        {"name": "Tostón de Pan Blanco o Integral con Queso Crema, Palta, Tomate y Semillas + Infusión", "price": 9900, "description": "Café - Té."},
+        {"name": "Tostón de Pan Blanco o Integral con Queso Crema, Palta, Tomate y Huevo Revuelto + Infusión + Jugo Exprimido", "price": 12000, "description": "Café - Té."},
+        {"name": "Yogurt Natural con Frutas de Estación y Granola", "price": 8000}
+    ],
+    "Para Compartir": [
+        {"name": "2 infusiones + porción de tostadas con queso crema y mermelada de estación + 2 medialunas dulces o saladas + jugo natural", "price": 14500, "description": "Café - té."}
+    ],
+    "Productos Fit": [
+        {"name": "Budín Crumble Manzana", "price": 4500, "description": "A base de harina de almendras, harina de avena, y harina integral organica."},
+        {"name": "Budín Carrot Cake", "price": 5500, "description": "A base de harina integral organica con canela, naranja y nuez. Vegano / Alto en fibra / Sin lactosa."},
+        {"name": "Budín de Algarroba y Maní", "price": 4500, "description": "a base de harina algarroba y harina integral organica. Vegano / Alto en fibra / Sin lactosa."},
+        {"name": "Bocaditos Choco Proteico", "price": 1500, "description": "a base de harina de almendras, proteina isolada, pasta de maní y chocolate al 60% sin azucar. Proteicos / Sin harinas / Gluten free / sin azucar"},
+        {"name": "Bocaditos Choco coco", "price": 1300, "description": "A base de coco y chocolate al 60% sin azucar. Keto / Sin harinas / Gluten free / Sin azucar"},
+        {"name": "Mix de frutas de estacion", "price": 4500}
+    ],
+    "Desayunos Fit": [
+        {"name": "Opcion 1", "price": 15000, "description": "Tostadas de pan 100% integral organico con huevos revueltos, palta, jamon, queso y dip de queso crema. Alto en proteinas / alto en fibras / rico en grasas saludables."},
+        {"name": "Opcion 2", "price": 13500, "description": "Tostadas de pan 100% integral organicas con humus de garbanzos, palta y semillas de sesamo. Vegano / Alto en fibras / sin lactosa."},
+        {"name": "Opcion 3", "price": 5500, "description": "Porcion de budin organicos Carrot Cake o Algarroba y Maní. Vegano / Alto en fibras / Sin lactosa."},
+        {"name": "Opcion", "price": 5500, "description": "Porcion de Budin organico Crumble de Manzana. Lox carb / Alto en proteinas / Alto en fibras"},
+        {"note": "Podes acompañar cualquier opcion con una infusion cafe / variedad té con leche de vaca o vegetal o jugo detox. Sumale fibras a tus desayunos con frutas de estacion."}
+    ],
+    "Sin TACC": [
+        {"name": "Conitos", "price": 2000, "description": "Rellenos de dulce de leche."},
+        {"name": "Alfajor", "price": 3000, "description": "Dulce de leche, Chocolate o Membrillo."},
+        {"name": "Nube de nuez", "price": 6000, "description": "crema + frutilla + dulce de leche"}
+    ],
     Promociones: [
         {
         name: "Langostinos + Stella / Limonada",
@@ -294,75 +360,3 @@ const menuData = {
     { name: "Álamos Blanco Dulce", price: 14900 }
     ],
 };
-
-const Menu = () => {
-    const { isMobileMenuOpen } = useMobileMenu();
-    const [selected, setSelected] = useState("Promociones");
-
-    const topOffset = isMobileMenuOpen ? "top-[145px]" : "top-[70px]";
-    const scrollOffset = isMobileMenuOpen ? "scroll-mt-[220px]" : "scroll-mt-[145px]";
-
-    return (
-        <div className="bg-soft-cream min-h-screen px-4 pb-10 pt-4 md:px-8">
-        
-        {/* Header */}
-        <div className="flex items-center justify-between mb-4">
-        <h1 className="text-3xl font-menu text-wood-brown text-center w-full">
-                MENÚ
-            </h1>
-        </div>
-
-        {/* Categorías (anclas) */}
-        <div className={`flex gap-3 overflow-x-auto p-4 rounded sticky ${topOffset} md:top-[100px] z-40 bg-wood-brown/60 nav-scroll backdrop-blur-sm shadow-sm`}>
-
-            {categories.map((cat) => (
-            <a
-                key={cat}
-                href={`#${cat.replace(/ /g, "-")}`}
-                className=" whitespace-nowrap p-4 py-2 rounded font-general text-sm shadow transition-all duration-200 bg-soft-beige text-wood-brown hover:bg-wood-brown hover:text-soft-beige"
-            >
-                {cat}
-            </a>
-            ))}
-        </div>
-
-        {/* Secciones */}
-        {Object.entries(menuData).map(([section, items]) => (
-        <section
-            key={section}
-            id={section.replace(/ /g, "-")}
-            className={`mt-10 ${scrollOffset} md:scroll-mt-45`} 
-        >
-            <h2 className="font-menu text-2xl text-wood-brown mb-4 text-center">
-            {section}
-            </h2>
-            <div className="flex flex-col gap-4">
-            {items.map((item, i) => (
-                <div
-                key={i}
-                className="bg-soft-cream p-4 rounded-xl shadow-md flex flex-col md:flex-row justify-between items-start md:items-center"
-                >
-                <div>
-                    <h3 className="text-wood-brown font-bold text-lg font-general">
-                    {item.name}
-                    </h3>
-                    {item.description && (
-                    <p className="text-gray-700 text-sm font-general mt-1">
-                        {item.description}
-                    </p>
-                    )}
-                </div>
-                <span className="text-wood-brown text-lg font-general mt-2 md:mt-0 md:ml-6">
-                    ${item.price.toLocaleString("es-AR")}
-                </span>
-                </div>
-            ))}
-            </div>
-        </section>
-        ))}
-        </div>
-    );
-};
-
-export default Menu;
-

@@ -57,15 +57,15 @@ export default function Home() {
         <div id="video1">
             <VideoSection videoSrc={video1} fullScreen={false}>
             <VideoOverlayCard
-                subtitle="Bienvenir"
-                description="Nuestro salón ofrece un ambiente cálido y accesible. Contamos con instalaciones preparadas para recibir a todas las personas, incluyendo aquellas en silla de rueda. La comodidad y la inclusión son parte de nuestra propuesta."
+                subtitle="Marisqueria"
+                description="Nos especializamos en mariscos frescos, seleccionados con dedicación y preparados con amor que resalta su sabor natural. Cada plato refleja nuestro compromiso con la cocina de mar."
             />
             </VideoSection>
         </div>
         <div id="video2">
             <VideoSection videoSrc={video2} fullScreen={false}>
             <VideoOverlayCard
-                subtitle="Compartir"
+                subtitle="Pet Friendly"
                 description="Las mascotas también son parte de la familia. Por eso, somos un espacio pet friendly. Podés disfrutar de una comida o una tarde especial acompañado de tu mejor amigo de cuatro patas."
             />
             </VideoSection>
@@ -73,7 +73,7 @@ export default function Home() {
         <div id="video3">
             <VideoSection videoSrc={video3} fullScreen={false}>
             <VideoOverlayCard
-                subtitle="Disfrutar"
+                subtitle="Frente al mar"
                 description="Nuestras terrazas con vista al mar, son el escenario ideal para almorzar, merendar o cenar con la mejor compañía. Brisa, horizonte y buena gastronomía se combinan para que cada momento sea inolvidable."
             />
             </VideoSection>
@@ -81,8 +81,8 @@ export default function Home() {
         <div id="video4">
             <VideoSection videoSrc={video4} fullScreen={false}>
             <VideoOverlayCard
-                subtitle="Degustar"
-                description="Nos especializamos en mariscos frescos, seleccionados con dedicación y preparados con amor que resalta su sabor natural. Cada plato refleja nuestro compromiso con la cocina de mar."
+                subtitle="Espacio Accesible"
+                description="Nuestro salón ofrece un ambiente cálido y accesible. Contamos con instalaciones preparadas para recibir a todas las personas, incluyendo aquellas con discapacidad. La comodidad y la inclusión son parte de nuestra propuesta."
             />
             </VideoSection>
         </div>
