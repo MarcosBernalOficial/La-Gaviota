@@ -44,7 +44,8 @@ const Eventos = () => {
         ? [eventoID1, eventoID2, eventoID3, eventoID4, eventoID5, eventoID6]
         : [eventoIN1, eventoIN2, eventoIN3, eventoIN4, eventoIN5, eventoIN6];
     const collageImages = [eventoFD1, eventoIN3, eventoIN5, eventoFD3];
-    const videos = video2;
+    const videos = [video2];
+
 
     return (
         <div className="bg-soft-cream min-h-screen pb-12 pt-0 md:px-10 max-w-7xl mx-auto relative">
