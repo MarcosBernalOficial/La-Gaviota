@@ -15,7 +15,6 @@ export default function VideoCarousel({ videos, fullScreen = false }) {
         loop={true}
         speed={1000}
         autoplay={{
-            delay: 8000,
             disableOnInteraction: false,
         }}
         className="w-full"

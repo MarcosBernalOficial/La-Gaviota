@@ -4,7 +4,7 @@ import {
     faUtensils,
     faUmbrellaBeach,
     faDog,
-    faFish
+    faWheelchair,
 } from '@fortawesome/free-solid-svg-icons';
 
 import VideoSection from '../components/VideoSection';
@@ -36,7 +36,7 @@ export default function Home() {
             <div className="w-full max-w-xl flex justify-evenly text-wood-brown text-3xl">
             <div className="flex flex-col items-center cursor-pointer" onClick={() => handleScrollTo("video1")}>
                 <FontAwesomeIcon icon={faUtensils} />
-                <p className="text-sm mt-1">Salón</p>
+                <p className="text-sm mt-1">Especialidad</p>
             </div>
             <div className="flex flex-col items-center cursor-pointer" onClick={() => handleScrollTo("video2")}>
                 <FontAwesomeIcon icon={faDog} />
@@ -47,8 +47,8 @@ export default function Home() {
                 <p className="text-sm mt-1">Terrazas</p>
             </div>
             <div className="flex flex-col items-center cursor-pointer" onClick={() => handleScrollTo("video4")}>
-                <FontAwesomeIcon icon={faFish} />
-                <p className="text-sm mt-1">Especialidad</p>
+                <FontAwesomeIcon icon={faWheelchair} />
+                <p className="text-sm mt-1">Acceso</p>
             </div>
             </div>
         </div>
@@ -74,7 +74,7 @@ export default function Home() {
             <VideoSection videoSrc={video3} fullScreen={false}>
             <VideoOverlayCard
                 subtitle="Frente al mar"
-                description="Nuestras terrazas con vista al mar, son el escenario ideal para almorzar, merendar o cenar con la mejor compañía. Brisa, horizonte y buena gastronomía se combinan para que cada momento sea inolvidable."
+                description="Nuestras terrazas con vista al mar son el escenario perfecto para disfrutar de una excelente gastronomía en la mejor compañía. Un entorno único donde cada momento se convierte en un recuerdo inolvidable."
             />
             </VideoSection>
         </div>

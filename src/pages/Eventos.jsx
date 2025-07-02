@@ -30,8 +30,9 @@ import eventoIN5 from "../assets/images/evento-informal-5-noche.jpg";
 import eventoIN6 from "../assets/images/evento-informal-6-noche.jpg";
 
 // VIDEOS - EVENTOS 
-import video1 from '../assets/videos/Evento-Dia.mp4';
-import video2 from '../assets/videos/Evento-Noche.mp4';
+import video1 from '../assets/videos/Evento-Noche.mp4';
+import video2 from '../assets/videos/video evento de noche.mp4';
+
 
 const whatsappLink = "https://wa.me/542235506245?text=Hola!%20Quisiera%20reservar%20el%20salón%20de%20La%20Gaviota.";
 
@@ -44,7 +45,7 @@ const Eventos = () => {
         ? [eventoID1, eventoID2, eventoID3, eventoID4, eventoID5, eventoID6]
         : [eventoIN1, eventoIN2, eventoIN3, eventoIN4, eventoIN5, eventoIN6];
     const collageImages = [eventoFD1, eventoIN3, eventoIN5, eventoFD3];
-    const videos = [video1, video2];
+    const videos = [video2];
 
     return (
         <div className="bg-soft-cream min-h-screen pb-12 pt-0 md:px-10 max-w-7xl mx-auto relative">
@@ -58,7 +59,7 @@ const Eventos = () => {
                 <h1 className="text-4xl font-bold font-eventos text-wood-brown mb-4">
                     La Gaviota Eventos
                 </h1>
-                <p className="text-lg text-gray-700 max-w-2xl mx-auto">
+                <p className="mx-auto px-8 text-center text-lg text-gray-700 max-w-2xl">
                     Descubrí cómo transformamos cada momento en un recuerdo inolvidable, desde encuentros íntimos hasta celebraciones vibrantes frente al mar.
                 </p>
             </div>
@@ -68,7 +69,7 @@ const Eventos = () => {
                     Eventos Formales
                 </h2>
                 <div
-                    className="cursor-pointer max-w-2xl mx-auto rounded-xl overflow-hidden shadow-md"
+                    className="cursor-pointer max-w-2xl mx-auto overflow-hidden"
                     onClick={() =>
                         setLightboxContent(
                             <div className="h-[70vh]">
@@ -90,7 +91,7 @@ const Eventos = () => {
                     Eventos Informales
                 </h2>
                 <div
-                    className="cursor-pointer max-w-2xl mx-auto rounded-xl overflow-hidden shadow-md"
+                    className="cursor-pointer max-w-2xl mx-auto overflow-hidden"
                     onClick={() =>
                         setLightboxContent(
                             <div className="h-[70vh]">

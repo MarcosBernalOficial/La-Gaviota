@@ -14,7 +14,7 @@ const Carousel = ({ images }) => {
                 delay: 4000, // 👈 cada slide se muestra 2 segundos
                 disableOnInteraction: false,
             }}
-            className="w-full h-60 md:h-80 rounded-xl overflow-hidden"
+            className="w-full h-60 md:h-80 overflow-hidden"
         >
             {images.map((imgSrc, index) => (
                 <SwiperSlide key={index}>

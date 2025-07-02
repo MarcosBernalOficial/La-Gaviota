@@ -75,14 +75,14 @@ const SurfClub = () => {
             </div>
 
             </div>
-            <div className="text-center">
+            <div className="mt-4 text-center">
                 <a
-                href={whatsappLink("Clases de Surf")}
+                href={whatsappLink("U Natural")}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block bg-wood-brown text-soft-beige px-4 py-2 mt-6 rounded-full"
+                className="inline-block mt-2 bg-green-500 text-soft-beige px-4 py-2 rounded-full"
                 >
-                Inscripción vía WhatsApp
+                Inscripción por WhatsApp
                 </a>
             </div>
         </section>
@@ -110,7 +110,7 @@ const SurfClub = () => {
                 <div>18:30 - 19:30 hs</div>
             </div>
 
-            <p className="font-bold text-wood-brown">Valor mensual: $12.000</p>
+            <p className="font-bold text-end text-wood-brown">Valor mensual: $12.000</p>
         </div>
 
         {/* Profesor U Natural */}
@@ -136,9 +136,9 @@ const SurfClub = () => {
             href={whatsappLink("U Natural")}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block mt-2 bg-wood-brown text-soft-beige px-4 py-2 rounded-full"
+            className="inline-block mt-2 bg-green-500 text-soft-beige px-4 py-2 rounded-full"
             >
-            Inscripción vía WhatsApp
+            Inscripción por WhatsApp
             </a>
         </div>
         </section>

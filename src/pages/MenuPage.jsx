@@ -1,22 +1,31 @@
 import { Link } from "react-router-dom";
 import Carousel from "../components/CarouselLink";
-import cafeteria from "../assets/images/menu.jpg";
-import cafes from "../assets/images/menu.jpg";
-import menu from "../assets/images/menu.jpg";
-import postres from "../assets/images/menu.jpg";
 
+import Coffee1 from "../assets/images/cafe-1.jpg";
+import Coffee2 from "../assets/images/cafe-cookies-1.jpg";
+import Te1 from "../assets/images/te-1.jpg";
+import Te2 from "../assets/images/ice-te-1.jpg";
+import deMar from "../assets/images/cazuela-ensalada-de-mar-1.jpg";
+import JardinDeMar from "../assets/images/jardin-de-mar-1.jpg";
+import Langostinos from "../assets/images/langostinos-gaviota-1.jpg";
+import Pasta1 from "../assets/images/pasta-1.jpg";
+import Promos from "../assets/images/promociones-.jpg";
+import vegan from "../assets/images/vegan-1.jpg";
 
 const slidesBreakFast = [
-    { src: cafeteria, title: "Cafetería", to: "/menu/desayuno-merienda" },
-    { src: cafes, title: "Cafes", to: "/menu/desayuno-merienda" },
-    { src: menu, title: "Desayunos", to: "/menu/desayuno-merienda" },
-    { src: postres, title: "Mini Tortas", to: "/menu/desayuno-merienda" }
+    { src: Coffee1, title: "Coffee", to: "/menu/desayuno-merienda" },
+    { src: Coffee2, title: "Coffee And Cookies", to: "/menu/desayuno-merienda" },
+    { src: Te1, title: "Té", to: "/menu/desayuno-merienda" },
+    { src: Te2, title: "Ice Té", to: "/menu/desayuno-merienda" }
 ];
 
 const slidesMenu = [
-    { src: cafes, title: "Menú", to: "/menu/almuerzo-cena" },
-    { src: menu, title: "Desayunos", to: "/menu/almuerzo-cena" },
-    { src: postres, title: "Mini Tortas", to: "/menu/almuerzo-cena" }
+    { src: deMar, title: "Marisqueria", to: "/menu/almuerzo-cena" },
+    { src: JardinDeMar, title: "Para compartir", to: "/menu/almuerzo-cena" },
+    { src: Langostinos, title: "Especialidades", to: "/menu/almuerzo-cena" },
+    { src: Pasta1, title: "Pastas", to: "/menu/almuerzo-cena" },
+    { src: Promos, title: "Promociones", to: "/menu/almuerzo-cena" },
+    { src: vegan, title: "Vegan", to: "/menu/almuerzo-cena" }
 ];
 
 
