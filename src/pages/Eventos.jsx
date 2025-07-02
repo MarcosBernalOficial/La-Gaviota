@@ -11,11 +11,9 @@ import eventoFD2 from "../assets/images/evento-formal-2-dia.jpg";
 import eventoFD3 from "../assets/images/evento-formal-3dia.jpg";
 import eventoFD4 from "../assets/images/evento-formal-4-dia.jpg";
 import eventoFD5 from "../assets/images/evento-formal-5-dia.jpg";
-import eventoFD6 from "../assets/images/evento-formal-6-dia.jpg";
 
 // INFORMAL - DÍA
 import eventoID1 from "../assets/images/evento-informal-1-dia.jpg";
-import eventoID2 from "../assets/images/evento-informal-2-dia.jpg";
 import eventoID3 from "../assets/images/evento-informal-3-dia.jpg";
 import eventoID4 from "../assets/images/evento-informal-4-dia.jpg";
 import eventoID5 from "../assets/images/evento-informal-5-dia.jpg";
@@ -39,9 +37,9 @@ const Eventos = () => {
     const [informalTime, setInformalTime] = useState("day");
     const [lightboxContent, setLightboxContent] = useState(null);
 
-    const formalImages = [eventoFD1, eventoFD2, eventoFD3, eventoFD4, eventoFD5, eventoFD6];
+    const formalImages = [eventoFD1, eventoFD2, eventoFD3, eventoFD4, eventoFD5];
     const informalImages = informalTime === "day"
-        ? [eventoID1, eventoID2, eventoID3, eventoID4, eventoID5, eventoID6]
+        ? [eventoID1, eventoID3, eventoID4, eventoID5, eventoID6]
         : [eventoIN1, eventoIN2, eventoIN3, eventoIN4, eventoIN5, eventoIN6];
     const collageImages = [eventoFD1, eventoIN3, eventoIN5, eventoFD3];
     const videos = [video2];
