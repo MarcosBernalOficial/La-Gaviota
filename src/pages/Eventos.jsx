@@ -79,7 +79,7 @@ const Eventos = () => {
                     <Carousel images={formalImages} />
                 </div>
                 <p className="text-center text-gray-700 mt-4 max-w-2xl mx-auto">
-                    Nuestros eventos formales son ideales para bodas, aniversarios y celebraciones especiales. Capacidad: hasta 150 personas.
+                    Nuestros eventos formales son ideales para bodas, aniversarios y celebraciones especiales.
                 </p>
             </section>
 
@@ -101,7 +101,7 @@ const Eventos = () => {
                     <Carousel images={informalImages} />
                 </div>
                 <p className="text-center text-gray-700 mt-4 max-w-2xl mx-auto">
-                    Perfectos para cumpleaños, after office y reuniones con amigos. Capacidad: hasta 200 personas.
+                    Perfectos para cumpleaños, after office y reuniones con amigos.
                 </p>
                 <div className="flex justify-center mt-4 gap-4">
                     {["day", "night"].map((time) => (
