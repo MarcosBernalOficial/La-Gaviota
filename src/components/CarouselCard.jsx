@@ -9,7 +9,7 @@ import "slick-carousel/slick/slick-theme.css";
 // Imágenes importadas
 import Menu from "../assets/images/cazuela-ensalada-de-mar-1.jpg";
 import eventosBg from "../assets/images/evento-formal-2-dia.jpg";
-import surfclubBg from "../assets/images/Surfclub.jpg";
+import surfclubBg from "../assets/images/SurfClub.jpg";
 import unaturalBg from "../assets/images/Unatural.jpg";
 
 // Datos de las tarjetas
