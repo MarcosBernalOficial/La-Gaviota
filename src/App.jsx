@@ -15,7 +15,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 function App() {
   return (
-    <Router basename="/La-Gaviota">
+    <Router>
       <Navbar />
       <div className=" flex flex-col min-h-screen">
         <Header />
