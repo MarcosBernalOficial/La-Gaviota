@@ -32,9 +32,9 @@ const slidesMenu = [
 export default function MenuPage() {
     return (
         <div className="w-full max-w-2xl mx-auto flex flex-col items-center justify-start gap-10 px-4 py-8">
-            <a href="/menu/desayuno-merienda" className="text-3xl md:text-4xl font-menu text-wood-brown text-center">Cafetería</a>
+            <Link to="/menu/desayuno-merienda" className="text-3xl md:text-4xl font-menu text-wood-brown text-center">Cafetería</Link>
             <Carousel slides={slidesBreakFast} />
-            <a href="/menu/almuerzo-cena" className="text-3xl md:text-4xl font-menu text-wood-brown text-center">MENÚ</a>
+            <Link to="/menu/almuerzo-cena" className="text-3xl md:text-4xl font-menu text-wood-brown text-center">MENÚ</Link>
             <Carousel slides={slidesMenu} />
         </div>
     );
