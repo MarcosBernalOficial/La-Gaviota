@@ -15,7 +15,7 @@ const Carousel = ({ slides }) => {
                 delay: 4000,
                 disableOnInteraction: false,
             }}
-            className="w-full h-60 md:h-80 overflow-hidden"
+            className="w-full aspect-video overflow-hidden"
         >
             {slides.map((slide, index) => {
                 const SlideContent = (
@@ -23,6 +23,8 @@ const Carousel = ({ slides }) => {
                         <img
                             src={slide.src}
                             alt={slide.title || `Slide ${index}`}
+                            width={1280}
+                            height={720}
                             className="w-full h-full object-cover"
                         />
                         <div className="absolute bottom-0 w-full bg-black/60 py-4 px-6">

@@ -22,9 +22,9 @@ const sections = [
         text: "Nuestro equipo trabaja con pasión para crear experiencias únicas.",
         image: plato2,
     },
-    ];
+];
 
-    export default function About() {
+export default function About() {
     return (
         <div className="w-full flex flex-col items-center">
         {sections.map((section, i) => (
@@ -33,15 +33,22 @@ const sections = [
             className="min-h-screen w-full flex justify-center bg-soft-beige text-wood-brown dark:text-beige"
             >
             <div className="max-w-xl w-full flex flex-col justify-center items-center text-center px-6 py-12">
+                
+                {/* Imagen con espacio reservado */}
+                <div className="w-full aspect-[16/9] overflow-hidden shadow-xl mb-6">
                 <motion.img
-                src={section.image}
-                alt={section.title}
-                className="w-full h-[60vh] object-cover shadow-xl mb-6"
-                initial={{ opacity: 0, scale: 0.95 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.8, ease: "easeOut" }}
-                viewport={{ once: true }}
+                    src={section.image}
+                    alt={section.title}
+                    loading="lazy"
+                    className="w-full h-full object-cover"
+                    initial={{ opacity: 0, scale: 0.95 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.8, ease: "easeOut" }}
+                    viewport={{ once: true }}
                 />
+                </div>
+
+                {/* Título */}
                 <motion.h2
                 className="text-3xl font-brownSugar mb-4 tracking-wide"
                 initial={{ opacity: 0, y: 30 }}
@@ -51,6 +58,8 @@ const sections = [
                 >
                 {section.title}
                 </motion.h2>
+
+                {/* Texto */}
                 <motion.p
                 className="text-base font-light leading-relaxed"
                 initial={{ opacity: 0, y: 20 }}

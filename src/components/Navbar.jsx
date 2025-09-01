@@ -18,6 +18,7 @@ const Navbar = () => {
                 {/* Botón hamburguesa */}
                 <button
                     className="absolute right-4 top-4 text-wood-brown md:hidden"
+                    name="menu despegable"
                     onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                 >
                     {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}

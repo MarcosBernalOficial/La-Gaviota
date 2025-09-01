@@ -9,20 +9,22 @@ const Carousel = ({ images }) => {
             spaceBetween={30}
             slidesPerView={1}
             loop={true}
-            speed={2000} // 👈 transición entre fotos dura 1 segundo
+            speed={2000}
             autoplay={{
-                delay: 4000, // 👈 cada slide se muestra 2 segundos
+                delay: 4000,
                 disableOnInteraction: false,
             }}
-            className="w-full h-60 md:h-80 overflow-hidden"
-        >
+            className="w-full aspect-video overflow-hidden"
+            >
             {images.map((imgSrc, index) => (
                 <SwiperSlide key={index}>
-                    <img
-                        src={imgSrc}
-                        alt={`Slide ${index}`}
-                        className="w-full h-full object-cover"
-                    />
+                <img
+                    src={imgSrc}
+                    alt={`Slide ${index}`}
+                    width={1280}
+                    height={720}
+                    className="w-full h-full object-cover"
+                />
                 </SwiperSlide>
             ))}
         </Swiper>

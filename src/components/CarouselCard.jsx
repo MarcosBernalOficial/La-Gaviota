@@ -39,12 +39,15 @@ export default function CarouselCard() {
                 {cardLinks.map((card, index) => (
                     <div key={index} className="">
                         <Link to={card.link} className="block bg-soft-beige overflow-hidden shadow-md">
-                            <img
+                            <div className="aspect-[4/3] w-full">
+                                <img
                                 src={card.image}
                                 alt={card.title}
-                                className="w-full object-cover"
-                                style={{ maxHeight: "250px", height: "auto" }}
-                            />
+                                width={400}
+                                height={300}
+                                className="w-full h-full object-cover"
+                                />
+                            </div>
                             <div className="p-4 text-center font-bold text-wood-brown text-xl font-title">
                                 {card.title}
                             </div>
