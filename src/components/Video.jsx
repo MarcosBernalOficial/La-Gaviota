@@ -4,6 +4,7 @@ const Video = ({ videoSrc, poster }) => {
             <video
                 src={videoSrc}
                 poster={poster}
+                preload="none"
                 className="w-full h-full object-cover"
                 autoPlay
                 loop

@@ -71,6 +71,10 @@ const SurfClub = () => {
                 <img
                     src={profeMaxi}
                     alt="Facilitador Joaquín"
+                    loading="lazy"
+                    decoding="async"
+                    width={80}
+                    height={80}
                     className="w-20 h-20 rounded-full object-cover shadow"
                 />
                 <div>
@@ -139,6 +143,10 @@ const SurfClub = () => {
             <img
                 src={profeJoaco}
                 alt="Facilitador Joaquín"
+                loading="lazy"
+                decoding="async"
+                width={80}
+                height={80}
                 className="w-20 h-20 rounded-full object-cover shadow"
             />
             <div>

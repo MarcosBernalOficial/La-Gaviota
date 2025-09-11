@@ -21,6 +21,8 @@ const Carousel = ({ images }) => {
                 <img
                     src={imgSrc}
                     alt={`Slide ${index}`}
+                    loading="lazy"
+                    decoding="async"
                     width={1280}
                     height={720}
                     className="w-full h-full object-cover"

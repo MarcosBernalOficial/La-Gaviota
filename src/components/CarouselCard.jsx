@@ -43,6 +43,8 @@ export default function CarouselCard() {
                                 <img
                                 src={card.image}
                                 alt={card.title}
+                                loading="lazy"
+                                decoding="async"
                                 width={400}
                                 height={300}
                                 className="w-full h-full object-cover"

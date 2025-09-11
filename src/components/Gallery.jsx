@@ -20,6 +20,7 @@ export default function Gallery() {
                     src={src} 
                     alt={`Gaviota ${index + 1}`} 
                     loading="lazy"
+                    decoding="async"
                     width={400}
                     height={300}
                     className="w-full h-full object-cover rounded transition duration-300 hover:scale-105" 
