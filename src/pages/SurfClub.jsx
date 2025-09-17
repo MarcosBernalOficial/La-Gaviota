@@ -13,7 +13,7 @@ import SC4 from "../assets/images/SurfClub/surfclub-4.png";
 
 const SurfClub = () => {
     const whatsappLink = (actividad) =>
-        `https://wa.me/542235535852?text=Hola!%20Quisiera%20consultar%20sobre%20${encodeURIComponent(actividad)}.`;
+        `https://wa.me/542235571513?text=Hola!%20Quisiera%20consultar%20sobre%20${encodeURIComponent(actividad)}.`;
 
     const imagesSurfClub = [SC1, SC2, SC3, SC4];
 
