@@ -12,11 +12,12 @@ export default function VideoSection({ videoSrc, showButton, fullScreen = false,
         <video
             className="w-full max-w-xl h-auto mx-auto object-contain block"
             src={videoSrc}
-            preload="none"
+            preload="metadata"
             autoPlay
             loop
             muted
             playsInline
+            controls
         />
         {children}
         </section>
