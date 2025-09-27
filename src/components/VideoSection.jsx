@@ -7,18 +7,26 @@ export default function VideoSection({ videoSrc, showButton, fullScreen = false,
         ? "relative h-screen w-full overflow-hidden group"
         : "relative w-full overflow-hidden group";
 
+    const handleVideoClick = (e) => {
+        const video = e.target;
+        if (video.paused) {
+            video.play();
+        }
+    };
+
     return (
         <section className={containerClasses}>
-        <video
-            className="w-full max-w-xl h-auto mx-auto object-contain block"
-            src={videoSrc}
-            preload="metadata"
-            autoPlay
-            loop
-            muted
-            playsInline
-        />
-        {children}
+            <video
+                className="w-full max-w-xl h-auto mx-auto object-contain block"
+                src={videoSrc}
+                preload="metadata"
+                autoPlay
+                loop
+                muted
+                playsInline
+                onClick={handleVideoClick}
+            />
+            {children}
         </section>
     );
 }
