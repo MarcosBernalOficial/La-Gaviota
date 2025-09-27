@@ -17,7 +17,9 @@ export default function VideoSection({ videoSrc, showButton, fullScreen = false,
             loop
             muted
             playsInline
-            controls
+            disablePictureInPicture
+            controlsList="nodownload nofullscreen noremoteplayback"
+            style={{ pointerEvents: 'none' }}
         />
         {children}
         </section>
