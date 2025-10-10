@@ -26,9 +26,8 @@ export const menuData = {
         {"name": "Media Luna + Infusión", "price": 4500, "description": "Café o té."},
         {"name": "Porción de Budín + Infusión", "price": 4500, "description": "Café o té."},
         {"name": "Brownie + Infusión", "price": 5000, "description": "Café o té."},
-        {"name": "Waffle dulce de leche + infusion", "price": 9000},
-        {"name": "Waffle con crema y frutos rojos + jugo exprimido o licuado", "price": 10000},
-        {"name": "Waffle Capresse + infusion", "price": 10000, "description": "mozzarella, tomate, albaca"},
+        {"name": "Waffle dulce de leche + infusion", "price": 10000},
+        {"name": "Waffle con crema y frutos rojos + jugo exprimido o licuado", "price": 12000},
         {"name": "Waffle de JyQ + infusion", "price": 10000, "description": "jamon y queso"},
         {"name": "Kit Kids", "price": 6000, "description": "Chocolatada + 2 ½ lunas."}
     ],
@@ -42,18 +41,16 @@ export const menuData = {
         {"name": "Gaviota Chai", "price": 3700, "description": "Especias, manzana, vainilla y cacao."}
     ],
     "Mini Tortas": [
-            {"name": "Tiramisú", "price": 5500},
-            {"name": "Cheesecake", "price": 6000},
-            {"name": "Lemon Pie", "price": 5500},
-            {"name": "Brownie con Crema y Frutillas", "price": 6500},
-            {"name": "Chocotorta", "price": 6000},
-            {"name": "Volcán de Chocolate", "price": 6500},
-            {"name": "Budín de Limón y Amapolas", "price": 4000},
-            {"name": "Budín de Carrot con Frosting de Queso", "price": 4800},
-            {"name": "Porción de Torta", "price": 6000},
-            {"name": "Scon de limon", "price": 2500},
-            {"name": "Media Luna", "price": 1000, "description": "Dulce o Salada."},
-            {"name": "Media Luna Con Jamón y Queso", "price": 2800, "description": "Dulce o Salada."}
+            {"name": "Tiramisú", "price": 7500},
+            {"name": "Cheesecake", "price": 8000},
+            {"name": "Lemon Pie", "price": 7500},
+            {"name": "Crumble de Manzana", "price": 7500},
+            {"name": "Brownie con Crema y Frutillas", "price": 9000},
+            {"name": "Volcán de Chocolate", "price": 9000},
+            {"name": "Budín de Limón y Amapolas", "price": 5000},
+            {"name": "Porción de Torta", "price": 8000},
+            {"name": "Media Luna", "price": 1500, "description": "Dulce o Salada."},
+            {"name": "Media Luna Con Jamón y Queso", "price": 4000, "description": "Dulce o Salada."}
     ],
     "Desayunos": [
         {"name": "Porción de Tostadas Acompañadas con Queso Crema y Mermelada de Estación", "price": 6000},
@@ -71,29 +68,14 @@ export const menuData = {
     "Para Compartir": [
         {"name": "2 infusiones + porción de tostadas con queso crema y mermelada de estación + 2 medialunas dulces o saladas + jugo natural", "price": 18000, "description": "Café - té."}
     ],
-    "Productos Fit": [
-        {"name": "Budín Crumble Manzana", "price": 4500, "description": "A base de harina de almendras, harina de avena, y harina integral organica."},
-        {"name": "Budín Carrot Cake", "price": 5500, "description": "A base de harina integral organica con canela, naranja y nuez. Vegano / Alto en fibra / Sin lactosa."},
-        {"name": "Budín de Algarroba y Maní", "price": 4500, "description": "a base de harina algarroba y harina integral organica. Vegano / Alto en fibra / Sin lactosa."},
-        {"name": "Bocaditos Choco Proteico", "price": 1500, "description": "a base de harina de almendras, proteina isolada, pasta de maní y chocolate al 60% sin azucar. Proteicos / Sin harinas / Gluten free / sin azucar"},
-        {"name": "Bocaditos Choco coco", "price": 1300, "description": "A base de coco y chocolate al 60% sin azucar. Keto / Sin harinas / Gluten free / Sin azucar"},
-        {"name": "Mix de frutas de estacion", "price": 4500}
-    ],
-    "Desayunos Fit": [
-        {"name": "Opcion 1", "price": 15000, "description": "Tostadas de pan 100% integral organico con huevos revueltos, palta, jamon, queso y dip de queso crema. Alto en proteinas / alto en fibras / rico en grasas saludables."},
-        {"name": "Opcion 2", "price": 13500, "description": "Tostadas de pan 100% integral organicas con humus de garbanzos, palta y semillas de sesamo. Vegano / Alto en fibras / sin lactosa."},
-        {"name": "Opcion 3", "price": 5500, "description": "Porcion de budin organicos Carrot Cake o Algarroba y Maní. Vegano / Alto en fibras / Sin lactosa."},
-        {"name": "Opcion", "price": 5500, "description": "Porcion de Budin organico Crumble de Manzana. Lox carb / Alto en proteinas / Alto en fibras"},
-        {"note": "Podes acompañar cualquier opcion con una infusion cafe / variedad té con leche de vaca o vegetal o jugo detox. Sumale fibras a tus desayunos con frutas de estacion."}
-    ],
-    "Sin TACC": [
-        {"name": "Conitos", "price": 2000, "description": "Rellenos de dulce de leche."},
-        {"name": "Alfajor", "price": 3000, "description": "Dulce de leche, Chocolate o Membrillo."},
-        {"name": "Nube de nuez", "price": 6000, "description": "crema + frutilla + dulce de leche"}
-    ],
     Promociones: [
         {
         name: "Langostinos + Stella / Limonada",
+        price: 25000,
+        description: ""
+        },
+        {
+        name: "Rabas + Stella / Limonada",
         price: 25000,
         description: ""
         },
@@ -292,8 +274,8 @@ export const menuData = {
     ],
     "Bebidas sin alcohol": [
     { name: "Agua con o sin gas 350cc", price: 3500 },
-    { name: "Gaseosa Coca-Cola 350cc", price: 3500 },
-    { name: "Gaseosa Coca-Cola 500cc", price: 4000 },
+    { name: "Gaseosa Coca-Cola 350cc", price: 4000 },
+    { name: "Gaseosa Coca-Cola 500cc", price: 4500 },
     { name: "Aquarius 500cc", price: 4000 },
     { name: "Limonada común chica", price: 4000 },
     { name: "Limonada común grande", price: 8000 },

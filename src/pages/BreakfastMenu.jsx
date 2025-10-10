@@ -9,9 +9,8 @@ const breakfastCategories = [
     "Mini Tortas",
     "Desayunos",
     "Para Compartir",
-    "Productos Fit",
-    "Desayunos Fit",
-    "Sin TACC"
+    "Postres",
+    "Bebidas sin alcohol"
 ];
 
 export default function BreakfastMenu() {
