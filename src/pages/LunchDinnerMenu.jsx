@@ -10,9 +10,8 @@ const lunchCategories = Object.keys(menuData).filter(
         "Mini Tortas",
         "Desayunos",
         "Para Compartir",
-        "Productos Fit",
-        "Desayunos Fit",
-        "Sin TACC"
+        "SIN TACC",
+        "SIN GLUTEN"
     ].includes(key)
 );
 
