@@ -75,6 +75,13 @@ export const menuData = {
     "Para Compartir": [
         {"name": "2 infusiones + porción de tostadas con queso crema y mermelada de estación + 2 medialunas dulces o saladas + jugo natural", "price": 20000, "description": "Café - té."}
     ],
+    "SIN TACC": [
+        {"name": "Alfajor la hechicera", "price": 5000},
+        {"name": "Conito de dulce de leche", "price": 3500}
+    ],
+    "SIN GLUTEN": [
+        {"name": "Nube de nuez", "price": 7000}
+    ],
     Promociones: [
         {
         name: "Langostinos + Stella / Limonada",
