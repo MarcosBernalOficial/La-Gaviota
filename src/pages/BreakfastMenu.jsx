@@ -9,6 +9,8 @@ const breakfastCategories = [
     "Mini Tortas",
     "Desayunos",
     "Para Compartir",
+    "SIN TACC",
+    "SIN GLUTEN",
     "Postres",
     "Bebidas sin alcohol"
 ];
