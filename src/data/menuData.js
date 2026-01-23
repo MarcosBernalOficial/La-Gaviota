@@ -93,7 +93,7 @@ export const menuData = {
         price: 27000,
         description: ""
         },
-        {,                                                                                                                                                                                                                                                                                 
+        {                                                                                                                                                                                                                                                                                 
         name: "Licuado para dos + Waffle de crema y frutos rojos",
         price: 14000,
         description: ""
