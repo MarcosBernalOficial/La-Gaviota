@@ -84,198 +84,198 @@ export const menuData = {
     ],
     Promociones: [
         {
-        name: "Langostinos + Stella / Limonada",
-        price: 26000,
-        description: ""
+        name: "Menú del Día",
+        price: 24000,
+        description: "Consultar por el menú del día. Incluye plato principal + guarnicion + bebida sin alcohol + postre."
         },
         {
         name: "Rabas + Stella / Limonada",
-        price: 26000,
+        price: 27000,
         description: ""
         },
-        {
-        name: "Menú del Día",
-        price: 22000,
-        description: "Consultar por el menú del día. Incluye plato principal + guarnicion + bebida sin alcohol + postre."
-        }
+        {,                                                                                                                                                                                                                                                                                 
+        name: "Licuado para dos + Waffle de crema y frutos rojos",
+        price: 14000,
+        description: ""
+        },
     ],
     Entradas: [
-        { name: "Tortilla de papa", price: 15000 },
-        { name: "Tortilla a la española", price: 19000 },
-        { name: "Revuelto de gramajo", price: 19000 },
-        { name: "Omelette con jamón y queso", price: 15000 },
-        { name: "Omelette con champiñones", price: 19000 }
+        { name: "Tortilla de papa", price: 16000 },
+        { name: "Tortilla a la española", price: 20000 },
+        { name: "Revuelto de gramajo", price: 20000 },
+        { name: "Omelette con jamón y queso", price: 16000 },
+        { name: "Omelette con champiñones", price: 20000 }
     ],
     Ensaladas: [
         {
         name: "Ensalada de Mar",
-        price: 19000,
+        price: 20000,
         description: "Mix de verdes, apio, manzana y langostinos."
         },
         {
         name: "Serrana",
-        price: 18000,
+        price: 19000,
         description: "Rúcula, tomate cherry, parmesano, jamón crudo, aceitunas negras y semillas de sésamo."
         },
         {
         name: "Especial",
-        price: 17000,
+        price: 18000,
         description: "Arroz, arvejas, tomate, atún, jamón y queso."
         },
         {
         name: "Americana",
-        price: 17000,
+        price: 18000,
         description: "Lechuga, tomate, palmitos, queso, choclo, huevo y aceitunas."
         },
         {
         name: "César",
-        price: 18000,
+        price: 19000,
         description: "Mix de verdes, parmesano, dados de pollo, croutones y salsa César."
         },
         {
         name: "Waldorf",
-        price: 18000,
+        price: 19000,
         description: "Manzana verde, apio, palmitos, crema y nueces."
         },
         {
         name: "Caprese",
-        price: 16000,
+        price: 17000,
         description: "Tomate, mozzarella y albahaca."
         },
         { name: "Rúcula y parmesano", price: 13000 },
         {
         name: "Green",
-        price: 10500,
+        price: 11500,
         description: "Rúcula, apio, lechuga y palta."
         },
         {
         name: "Mixta",
-        price: 10500,
+        price: 11500,
         description: "Lechuga, tomate y cebolla."
         },
         {
         name: "Pastel de choclo",
-        price: 17000,
+        price: 18000,
         description: "Choclo, albahaca y cebolla."
         },
-        { name: "Salteado de zapallito", price: 17000 },
-        { name: "Wok de vegetales", price: 17000 }
+        { name: "Salteado de zapallito", price: 18000 },
+        { name: "Wok de vegetales", price: 18000 }
     ],
     "Frituras": [
-        { name: "Rabas", price: 19500 },
-        { name: "Cornalitos", price: 15000 },
-        { name: "Calamaretis", price: 22000 },
-        { name: "Calamaretis a la lionesa", price: 25000 },
-        { name: "Langostinos empanados", price: 21000 },
-        { name: "Mejillones a la provenzal", price: 24000 },
-        { name: "Gambas al ajillo", price: 26000 }
+        { name: "Rabas", price: 21000 },
+        { name: "Cornalitos", price: 16000 },
+        { name: "Calamaretis", price: 23000 },
+        { name: "Calamaretis a la lionesa", price: 26000 },
+        { name: "Langostinos empanados", price: 22000 },
+        { name: "Mejillones a la provenzal", price: 25000 },
+        { name: "Gambas al ajillo", price: 27000 }
     ],
     "Frituras para compartir": [
         {
         name: "Jardín de Mar",
-        price: 44000,
+        price: 45000,
         description: "Langostinos, rabas, cornalitos, calamaretis, mejillones a la provenzal, escabeche de calamar."
         },
         {
         name: "Langostinos La Gaviota",
-        price: 36000,
+        price: 37000,
         description: "Langostinos, panceta y queso, acompañado con papas a la española."
         }
     ],
     "Porciones": [
-    { name: "Porción de papas fritas", price: 9000 },
-    { name: "Papas a la provenzal", price: 10000, description: "Ajo y perejil." },
-    { name: "Papas a la criolla", price: 12000, description: "Morrón y cebolla caramelizada." },
-    { name: "Papas especial", price: 16000, description: "Cheddar y panceta ahumada." },
-    { name: "Papas a la española", price: 16000, description: "Acompañadas de crema a las finas hierbas." },
-    { name: "Porción de puré de papa", price: 9000 },
-    { name: "Porción de puré de calabaza", price: 9000 }
+    { name: "Porción de papas fritas", price: 10000 },
+    { name: "Papas a la provenzal", price: 11000, description: "Ajo y perejil." },
+    { name: "Papas a la criolla", price: 13000, description: "Morrón y cebolla caramelizada." },
+    { name: "Papas especial", price: 17000, description: "Cheddar y panceta ahumada." },
+    { name: "Papas a la española", price: 17000, description: "Acompañadas de crema a las finas hierbas." },
+    { name: "Porción de puré de papa", price: 10000 },
+    { name: "Porción de puré de calabaza", price: 10000 }
     ],
     "Sandwich Frío": [
-    { name: "Básico", price: 12000, description: "Jamón y queso." },
-    { name: "Caramel", price: 14000, description: "Zanahoria caramelizada, tomate y palta." },
-    { name: "Primavera", price: 15000, description: "Lechuga, tomate, huevo duro, jamón y queso." },
-    { name: "Mediterráneo", price: 17500, description: "Rúcula, palmito, tomate, nueces y oliva." },
-    { name: "Especial", price: 17500, description: "Jamón crudo, queso y manteca." },
+    { name: "Básico", price: 13000, description: "Jamón y queso." },
+    { name: "Caramel", price: 15000, description: "Zanahoria caramelizada, tomate y palta." },
+    { name: "Primavera", price: 16000, description: "Lechuga, tomate, huevo duro, jamón y queso." },
+    { name: "Mediterráneo", price: 18500, description: "Rúcula, palmito, tomate, nueces y oliva." },
+    { name: "Especial", price: 18500, description: "Jamón crudo, queso y manteca." },
     ],
     "Sandwich Caliente": [
-    { name: "Milanesa de ternera o suprema", price: 17000, description: "Sola." },
-    { name: "Milanesa de ternera o suprema con lechuga y tomate", price: 18000 },
-    { name: "Milanesa de ternera o suprema con jamón y queso", price: 20000 },
-    { name: "Milanesa de ternera o suprema completa", price: 22000, description: "Con lechuga, tomate, jamón, queso y huevo." },
-    { name: "Lomito", price: 18000, description: "Solo." },
-    { name: "Lomito con lechuga y tomate", price: 20000 },
-    { name: "Lomito con jamón y queso", price: 22000 },
-    { name: "Lomito completo", price: 24000, description: "Con lechuga, tomate, jamón, queso y huevo." },
-    { name: "Lomito especial", price: 26000, description: "Jamón, parmesano, cebolla caramelizada, huevo a la plancha y cheddar." },
-    { name: "Hamburguesa", price: 13000, description: "Sola." },
-    { name: "Hamburguesa con lechuga y tomate", price: 15000 },
-    { name: "Hamburguesa con jamón y queso", price: 17000 },
-    { name: "Hamburguesa completa", price: 19000, description: "Con lechuga, tomate, jamón, queso y huevo." },
-    { name: "Hamburguesa especial", price: 20000, description: "Cheddar, cebolla caramelizada, panceta y ketchup." },
-    { name: "Sandwich de pollo", price: 17000, description: "Solo." },
-    { name: "Sandwich de pollo con lechuga y tomate", price: 18000 },
-    { name: "Sandwich de pollo con jamón y queso", price: 20000 },
-    { name: "Sandwich de pollo completo", price: 22000, description: "Con lechuga, tomate, jamón, queso y huevo." },
-    { name: "Sandwich de pollo con tomate, rúcula y jugo de limón", price: 24000 }
+    { name: "Milanesa de ternera o suprema", price: 18000, description: "Sola." },
+    { name: "Milanesa de ternera o suprema con lechuga y tomate", price: 19000 },
+    { name: "Milanesa de ternera o suprema con jamón y queso", price: 21000 },
+    { name: "Milanesa de ternera o suprema completa", price: 23000, description: "Con lechuga, tomate, jamón, queso y huevo." },
+    { name: "Lomito", price: 19000, description: "Solo." },
+    { name: "Lomito con lechuga y tomate", price: 21000 },
+    { name: "Lomito con jamón y queso", price: 23000 },
+    { name: "Lomito completo", price: 25000, description: "Con lechuga, tomate, jamón, queso y huevo." },
+    { name: "Lomito especial", price: 27000, description: "Jamón, parmesano, cebolla caramelizada, huevo a la plancha y cheddar." },
+    { name: "Hamburguesa", price: 14000, description: "Sola." },
+    { name: "Hamburguesa con lechuga y tomate", price: 16000 },
+    { name: "Hamburguesa con jamón y queso", price: 18000 },
+    { name: "Hamburguesa completa", price: 20000, description: "Con lechuga, tomate, jamón, queso y huevo." },
+    { name: "Hamburguesa especial", price: 21000, description: "Cheddar, cebolla caramelizada, panceta y ketchup." },
+    { name: "Sandwich de pollo", price: 18000, description: "Solo." },
+    { name: "Sandwich de pollo con lechuga y tomate", price: 19000 },
+    { name: "Sandwich de pollo con jamón y queso", price: 21000 },
+    { name: "Sandwich de pollo completo", price: 23000, description: "Con lechuga, tomate, jamón, queso y huevo." },
+    { name: "Sandwich de pollo con tomate, rúcula y jugo de limón", price: 25000 }
     ],
     "Minutas": [
-    { name: "Milanesa de ternera", price: 18000, description: "Con guarnición." },
-    { name: "Milanesa de ternera a la suiza", price: 22000, description: "Queso y salsa blanca. Con guarnición." },
-    { name: "Milanesa de ternera napolitana", price: 23000, description: "Salsa de tomate, jamón y queso. Con guarnición." },
-    { name: "Suprema", price: 18000, description: "Con guarnición." },
-    { name: "Suprema a la suiza", price: 22000, description: "Queso y salsa blanca. Con guarnición." },
-    { name: "Suprema napolitana", price: 23000, description: "Salsa de tomate, jamón y queso. Con guarnición." },
-    { name: "Lomito al plato solo", price: 18000 },
-    { name: "Lomito al plato con guarnición", price: 21000 },
-    { name: "Bife de lomo al plato", price: 25000, description: "Con guarnición." },
-    { name: "Bife de lomo completo", price: 30000, description: "Con papas fritas y dos huevos fritos." },
-    { name: "Bife de chorizo al plato", price: 25000, description: "Con guarnición." },
-    { name: "Bife de chorizo completo", price: 30000, description: "Con papas fritas y dos huevos fritos." },
-    { name: "Pollo a la plancha", price: 18000, description: "(Pata muslo o pechuga) con guarnición." }
+    { name: "Milanesa de ternera", price: 19000, description: "Con guarnición." },
+    { name: "Milanesa de ternera a la suiza", price: 23000, description: "Queso y salsa blanca. Con guarnición." },
+    { name: "Milanesa de ternera napolitana", price: 24000, description: "Salsa de tomate, jamón y queso. Con guarnición." },
+    { name: "Suprema", price: 19000, description: "Con guarnición." },
+    { name: "Suprema a la suiza", price: 23000, description: "Queso y salsa blanca. Con guarnición." },
+    { name: "Suprema napolitana", price: 24000, description: "Salsa de tomate, jamón y queso. Con guarnición." },
+    { name: "Lomito al plato solo", price: 19000 },
+    { name: "Lomito al plato con guarnición", price: 22000 },
+    { name: "Bife de lomo al plato", price: 26000, description: "Con guarnición." },
+    { name: "Bife de lomo completo", price: 31000, description: "Con papas fritas y dos huevos fritos." },
+    { name: "Bife de chorizo al plato", price: 26000, description: "Con guarnición." },
+    { name: "Bife de chorizo completo", price: 31000, description: "Con papas fritas y dos huevos fritos." },
+    { name: "Pollo a la plancha", price: 19000, description: "(Pata muslo o pechuga) con guarnición." }
     ],
     "Pescados": [
-    { name: "Merluza a la romana", price: 16000, description: "Con guarnición." },
+    { name: "Merluza a la romana", price: 17000, description: "Con guarnición." },
     { name: "Lenguado a la plancha", price: 20000, description: "Con guarnición." },
     { name: "Lenguado a la romana", price: 19000, description: "Con guarnición." },
-    { name: "Abadejo grillé", price: 22000, description: "Con guarnición." },
-    { name: "Salmón blanco", price: 19000, description: "Con guarnición." },
-    { name: "Salmón rosado grillé", price: 35000, description: "Con guarnición." },
-    { name: "Paella", price: 36000 },
-    { name: "Arroz con mariscos", price: 36000 },
-    { name: "Cazuela de mariscos", price: 38000 }
+    { name: "Abadejo grillé", price: 23000, description: "Con guarnición." },
+    { name: "Salmón blanco", price: 20000, description: "Con guarnición." },
+    { name: "Salmón rosado grillé", price: 36000, description: "Con guarnición." },
+    { name: "Paella", price: 37000 },
+    { name: "Arroz con mariscos", price: 37000 },
+    { name: "Cazuela de mariscos", price: 39000 }
     ],
     "Salsas para pescados": [
-    { name: "Cuatro quesos", price: 10000, description: "Crema, parmesano, roquefort y reggianito." },
-    { name: "Putanesca", price: 10000, description: "Tomate, atún, alcaparras, aceitunas y ají picante." },
-    { name: "Roquefort", price: 10000, description: "Crema y roquefort." },
-    { name: "Crema", price: 5500, description: "Salsa de crema." },
-    { name: "A la vasca", price: 5500 },
-    { name: "Al ajillo", price: 5500 },
-    { name: "A la mostaza", price: 10000, description: "Mostaza, crema y parmesano." }
+    { name: "Cuatro quesos", price: 11000, description: "Crema, parmesano, roquefort y reggianito." },
+    { name: "Putanesca", price: 11000, description: "Tomate, atún, alcaparras, aceitunas y ají picante." },
+    { name: "Roquefort", price: 11000, description: "Crema y roquefort." },
+    { name: "Crema", price: 6000, description: "Salsa de crema." },
+    { name: "A la vasca", price: 6000 },
+    { name: "Al ajillo", price: 6000 },
+    { name: "A la mostaza", price: 11000, description: "Mostaza, crema y parmesano." }
     ],
     "Pastas Caseras": [
-    { name: "Ñoquis de papa", price: 12000 },
-    { name: "Tallarines", price: 12000 },
-    { name: "Ravioles de espinaca y ricota", price: 14000 },
-    { name: "Sorrentinos de jamón y queso", price: 15000 },
-    { name: "Sorrentinos de calabaza y mozzarella", price: 15000 },
-    { name: "Sorrentinos de langostinos y queso", price: 18000 }
+    { name: "Ñoquis de papa", price: 13000 },
+    { name: "Tallarines", price: 13000 },
+    { name: "Ravioles de espinaca y ricota", price: 15000 },
+    { name: "Sorrentinos de jamón y queso", price: 16000 },
+    { name: "Sorrentinos de calabaza y mozzarella", price: 16000 },
+    { name: "Sorrentinos de langostinos y queso", price: 19000 }
     ],
     "Salsas para pastas": [
-    { name: "Fileto, rosa o mixta", price: 5500 },
-    { name: "Crema", price: 5500 },
-    { name: "Bolognesa", price: 9000 },
-    { name: "Estofado de carne", price: 9000 },
-    { name: "Pesto", price: 8000 },
-    { name: "Camarones a la crema", price: 15000 },
-    { name: "Camarones al tomate", price: 15000 },
-    { name: "Mariscos al tomate", price: 15000 }
+    { name: "Fileto, rosa o mixta", price: 6000 },
+    { name: "Crema", price: 6000 },
+    { name: "Bolognesa", price: 10000 },
+    { name: "Estofado de carne", price: 10000 },
+    { name: "Pesto", price: 9000 },
+    { name: "Camarones a la crema", price: 16000 },
+    { name: "Camarones al tomate", price: 16000 },
+    { name: "Mariscos al tomate", price: 16000 }
     ],
     "Menú Infantil": [
-    { name: "Tallarines con salsa mixta", price: 14000 },
-    { name: "Bastoncitos de pollo con papas fritas", price: 14000 },
-    { name: "Lomito con puré", price: 15000 },
+    { name: "Tallarines con salsa mixta", price: 15000 },
+    { name: "Bastoncitos de pollo con papas fritas", price: 15000 },
+    { name: "Lomito con puré", price: 16000 },
     ],
     "Postres": [
     { name: "Ensalada de fruta natural", price: 6000 },
