@@ -42,7 +42,20 @@ export default function MenuBase({ title, menuData }) {
                         {section}
                     </h2>
                     <div className="flex flex-col gap-4">
-                        {items.map((item, i) => (
+                        {items.map((item, i) => item.heading !== undefined ? (
+                            <div key={i} className="text-center mt-2">
+                                {item.heading && (
+                                    <h3 className="text-wood-brown font-bold text-lg font-general">
+                                        {item.heading}
+                                    </h3>
+                                )}
+                                {item.note && (
+                                    <p className="text-gray-700 text-sm font-general italic">
+                                        {item.note}
+                                    </p>
+                                )}
+                            </div>
+                        ) : (
                             <div
                                 key={i}
                                 className="bg-soft-cream p-4 rounded-xl shadow-md flex flex-col md:flex-row justify-between items-start md:items-center"

@@ -1,361 +1,316 @@
 // src/data/menuData.js
+// Contenido tomado de las cartas impresas (Hoja 1, 2 y 3 · Cafetería).
+// Un item con "heading" es un subtítulo dentro de la sección.
 
-export const menuData = {
+export const cafeteriaData = {
     "Cafetería Caliente": [
-        {"name": "Espresso", "price": 3800, "description": "Espresso."},
-        {"name": "Americano", "price": 3800, "description": "Espresso + agua."},
-        {"name": "Long Black", "price": 5500, "description": "Doble espresso + agua."},
-        {"name": "Doppio", "price": 5500, "description": "Doble espresso."},
-        {"name": "Cortado", "price": 3800, "description": "Espresso + leche."},
-        {"name": "Lágrima", "price": 3800, "description": "Leche + 1/4 de espresso."},
-        {"name": "Lágrima doble", "price": 5500, "description": "Leche + 1/2 espresso."},
-        {"name": "Latte", "price": 5500, "description": "Espresso + leche."},
-        {"name": "Latte XL", "price": 7000, "description": "Doble espresso + leche."},
-        {"name": "Cappuccino", "price": 7000, "description": "Espresso + leche + chocolate, opcional canela."},
-        {"name": "Mocha Coffee", "price": 7000, "description": "Espresso + leche + chocolate."},
-        {"name": "Cafe Irlandes", "price": 7500, "description": "Espresso + whisky + canela."},
-        {"name": "Submarino", "price": 6500, "description": "Leche + Barra de chocolate."},
-        {"name": "Chocolatada caliente", "price": 5000},
-        {"name": "Adicional Crema", "price": 1000}
+        { name: "Espresso", price: 4500, description: "Espresso" },
+        { name: "Americano", price: 4500, description: "Agua + Espresso" },
+        { name: "Cortado", price: 4500, description: "Espresso + Leche" },
+        { name: "Lágrima", price: 4500, description: "Leche + ¼ de Leche" },
+        { name: "Doppio", price: 6500, description: "Doble Espresso" },
+        { name: "Long Black", price: 6500, description: "Agua + doble Espresso" },
+        { name: "Latte", price: 6500, description: "Espresso + Leche" },
+        { name: "Lágrima Doble", price: 6500, description: "Leche + ½ de Leche" },
+        { name: "Mocha coffee", price: 8000, description: "Espresso + Leche + Chocolate" },
+        { name: "Latte especial", price: 9000, description: "Espresso + Leche + Nutella" },
+        { name: "Cappuccino", price: 9000, description: "Espresso + Leche + Chocolate + Canela" },
+        { name: "Coffee irlandés", price: 9000, description: "Espresso + whisky + canela" },
+        { name: "Submarino", price: 8000, description: "Leche + Barra de chocolate" },
+        { name: "Chocolatada Caliente", price: 6000, description: "Chocolate + Leche" },
+        { name: "Adicional Crema", price: 1500 }
     ],
-    "Cafetería Fria": [
-        {"name": "Ice Latte", "price": 5500, "description": "Espresso + leche + hielo."},
-        {"name": "Frapucchino", "price": 7000, "description": "Espresso + leche + chocolate + hielo. (Opcional canela)."},
-        {"name": "Chocolatada Fría", "price": 5000},
-        {"name": "Adicional Crema", "price": 1000}
+    "Cafetería Fría": [
+        { name: "Ice Latte", price: 6500, description: "Espresso + Leche + Hielo" },
+        { name: "Ice Latte especial", price: 9000, description: "Espresso + Leche + Nutella + Hielo" },
+        { name: "Frappuccino", price: 9000, description: "Espresso + Leche + Chocolate + Canela + Hielo" },
+        { name: "Chocolatada Fría", price: 6000, description: "Chocolate + Leche" },
+        { name: "Licuados con fruta natural", price: 7000 },
+        { name: "Exprimido de Naranja", price: 7000 },
+        { name: "Jugo Verde", price: 7000 },
+        { name: "Limonada común chica", price: 6000 },
+        { name: "Limonada común grande", price: 9000 },
+        { name: "Limonada menta y jengibre chica", price: 7000 },
+        { name: "Limonada menta y jengibre grande", price: 12000 }
     ],
     "Latte Time": [
-        {"name": "Media Luna + Infusión", "price": 6000, "description": "Café o té."},
-        {"name": "Porción de Budín + Infusión", "price": 6000, "description": "Café o té."},
-        {"name": "Brownie + Infusión", "price": 6500, "description": "Café o té."},
-        {"name": "Waffle dulce de leche + infusion", "price": 10000},
-        {"name": "Waffle con crema y frutos rojos + jugo exprimido o licuado", "price": 12000},
-        {"name": "Waffle de JyQ + infusion", "price": 11000, "description": "jamon y queso"},
-        {"name": "Kit Kids", "price": 6000, "description": "Chocolatada + 2 media lunas."}
+        { name: "Infusión + Medialuna", price: 8500, description: "Café o Té" },
+        { name: "Infusión + Budín", price: 8500, description: "Café o Té" },
+        { name: "Infusión + Brownie", price: 9500, description: "Café o Té" },
+        { name: "Infusión + Waffle de dulce de leche", price: 12000, description: "Café o Té" },
+        { name: "Infusión + Waffle de jamón y queso", price: 15000, description: "Café o Té" },
+        { name: "Infusión + Waffle de crema y frutos rojos", price: 14000, description: "Licuado o Exprimido de naranja" },
+        { name: "Infusión + Waffle de Nutella y frutilla", price: 16000, description: "Café o Té" },
+        { name: "Kit Kids", price: 8000, description: "Chocolatada (fría / caliente) + 2 medialunas" }
     ],
-    "Carta de Té": [
-        {"name": "Blend Gaviota", "price": 4000, "description": "Bayas de sauco, arándanos, rosa mosqueta, naranjas sanguinas y papaya."},
-        {"name": "Calm", "price": 4000, "description": "Hojas de verbena, cascaritas de naranja y clementinas."},
-        {"name": "Oriental Summer", "price": 4000, "description": "Té verde, duraznos, manzanas, rosa mosqueta y pétalos."},
-        {"name": "English Breakfast", "price": 4000, "description": "Blend de cosechas premium de India, Ceylon y China."},
-        {"name": "After 5'", "price": 4000, "description": "Té negro, chocolate y menta."},
-        {"name": "Earl Great", "price": 4000, "description": "Hebras perfumadas con naranja, limón y bergamota."},
-        {"name": "Gaviota Chai", "price": 4000, "description": "Especias, manzana, vainilla y cacao."}
+    "Carta de Té en hebras": [
+        { heading: "Infusiones", note: "No contienen hebras de té ni cafeína" },
+        { name: "Blend Gaviota", price: 5000, description: "Bayas de saúco, arándanos, rosa mosqueta, naranjas sanguinas y papaya." },
+        { name: "Calm", price: 5000, description: "Hojas de verbena, cascaritas de naranja y clementinas." },
+        { heading: "Té Verde" },
+        { name: "Oriental Summer", price: 5000, description: "Té verde, duraznos, manzanas, rosa mosqueta y pétalos." },
+        { name: "Jasmine Congou", price: 5000, description: "Base de té verde y flores de jazmín." },
+        { heading: "Té Clásico" },
+        { name: "English Breakfast", price: 5000, description: "Blend de cosechas premium de India, Ceylon y China." },
+        { heading: "Té Negro" },
+        { name: "After 5'", price: 5000, description: "Té negro, chocolate y menta." },
+        { name: "Earl Great", price: 5000, description: "Hebras perfumadas con naranja, limón y bergamota." },
+        { name: "Gaviota Chai", price: 5000, description: "Especias, manzana, vainilla y cacao." }
+    ],
+    "Desayunos y Meriendas": [
+        { name: "Tostadas", price: 8000, description: "Tostadas con Queso Crema y Mermelada de estación" },
+        { name: "Tostadas + Infusión", price: 12000, description: "Tostadas con Queso Crema y Mermelada de estación" },
+        { name: "Tostadas + Infusión + Exprimido", price: 17000, description: "Tostadas con Queso Crema y Mermelada de estación" },
+        { name: "Tostadas + Jugo Verde", price: 14000, description: "Tostadas con Queso Crema y Mermelada de estación" },
+        { name: "Tostado de Miga", price: 12000, description: "De jamón, queso y mayonesa" },
+        { name: "Tostado de Miga + Infusión", price: 16000, description: "De jamón, queso y mayonesa" },
+        { name: "Tostón", price: 13000, description: "Con queso crema, palta, tomate y semillas" },
+        { name: "Tostón + Infusión", price: 18000, description: "Con queso crema, palta, tomate y semillas" },
+        { name: "Tostón de Huevo + Infusión + Exprimido", price: 21000, description: "Con queso crema, palta, tomate y huevo revuelto" },
+        { name: "Yogurt Natural", price: 16000, description: "Con frutas de estación y granola" },
+        { name: "Tostadas Gaviota", price: 15000, description: "Tostadas con huevos revueltos, palta, jamón y queso" },
+        { name: "Tostadas Gaviota + Infusión", price: 19000, description: "Tostadas con huevos revueltos, palta, jamón y queso" },
+        { name: "Tostadas Gaviota + Infusión + Exprimido", price: 22000, description: "Tostadas con huevos revueltos, palta, jamón y queso" }
     ],
     "Mini Tortas": [
-            {"name": "Tiramisú", "price": 7500},
-            {"name": "Cheesecake", "price": 8000},
-            {"name": "Lemon Pie", "price": 7500},
-            {"name": "Brownie con Ddl, Crema y Frutillas", "price": 9000},
-            {"name": "Volcán de Chocolate", "price": 9000},
-            {"name": "Budín de Limón y Amapolas", "price": 5000},
-            {"name": "Porción de Torta", "price": 8000, "description": "Matilda o Red Velvet."},
-            {"name": "Chocotorta", "price": 7500},
-            {"name": "Cookie", "price": 5000, "description": "Pistacho o Red Velvet."},
-            {"name": "Media Luna", "price": 1500, "description": "Dulce o Salada."},
-            {"name": "Media Luna Con Jamón y Queso", "price": 4000, "description": "Dulce o Salada."}
-    ],
-    "Desayunos": [
-        {"name": "Porción de Tostadas Acompañadas con Queso Crema y Mermelada de Estación", "price": 7000},
-        {"name": "Porción de Tostadas Acompañadas con Queso Crema y Mermelada de Estación + Infusión", "price": 10000, "description": "Café - Té."},
-        {"name": "Porción de Tostadas Acompañadas con Queso Crema y Mermelada de Estación + Infusión + Jugo Exprimido", "price": 13000, "description": "Café - Té."},
-        {"name": "Porción de Tostadas Acompañadas con Queso Crema y Mermelada de Estación + Jugo Natural Verde (Pepino, Apio y Manzana Verde)", "price": 13000},
-        {"name": "Tostado de Miga con Jamón & Queso", "price": 10000},
-        {"name": "Tostado Pan Frances con Jamón & Queso", "price": 11000},
-        {"name": "Tostado de Miga con Jamón & Queso + Infusión", "price": 14000, "description": "Café - Té."},
-        {"name": "Tostón de Pan Blanco o Integral con Queso Crema, Palta, Tomate y Semillas", "price": 11000},
-        {"name": "Tostón de Pan Blanco o Integral con Queso Crema, Palta, Tomate y Semillas + Infusión", "price": 14000, "description": "Café - Té."},
-        {"name": "Tostón de Pan Blanco o Integral con Queso Crema, Palta, Tomate y Huevo Revuelto + Infusión + Jugo Exprimido", "price": 16000, "description": "Café - Té."},
-        {"name": "Yogurt Natural con Frutas de Estación y Granola", "price": 12000},
-        {"name": "Tostadas Gaviota", "price": 12000, "description": "Tostadas con huevo revuelto, palta, jamón y queso."},
-        {"name": "Tostadas Gaviota + Infusión", "price": 15000, "description": "Tostadas con huevo revuelto, palta, jamón y queso. Infusión: Café - Té."},
-        {"name": "Tostadas Gaviota + Infusión + Jugo Exprimido", "price": 17000, "description": "Tostadas con huevo revuelto, palta, jamón y queso. Infusión: Café - Té."}
-        
+        { name: "Cheesecake", price: 9000 },
+        { name: "Lemon Pie", price: 8500 },
+        { name: "Tiramisú", price: 9000 },
+        { name: "Crumble de manzana", price: 8500 },
+        { name: "Brownie con ddl, crema y frutillas", price: 9000 },
+        { name: "Budín de limón y amapolas", price: 7000, description: "Dos rodajas" },
+        { name: "Budín de chocolate", price: 7000, description: "Dos rodajas" },
+        { name: "Volcán de chocolate con bocha de helado", price: 12000 },
+        { name: "Chocotorta", price: 9000 },
+        { name: "Monoporción de Torta Matilda", price: 11500 },
+        { name: "Monoporción de Torta red velvet", price: 11500 },
+        { name: "Monoporción de Torta Bruce", price: 13500 },
+        { name: "Alfajor de maicena", price: 5000 },
+        { name: "Alfajores", price: 5500, description: "Pistacho, ddl y frutos rojos" },
+        { name: "Cookie pistacho / red velvet", price: 6000 },
+        { name: "Medialuna", price: 1800 },
+        { name: "Medialuna con jamón y queso", price: 5000 },
+        { name: "Croissant", price: 8000 },
+        { name: "Croissant con jamón y queso", price: 11000 },
+        { name: "Croissant con Nutella y frutillas", price: 11000 },
+        { name: "Scon de queso", price: 6000 }
     ],
     "Para Compartir": [
-        {"name": "2 infusiones + porción de tostadas con queso crema y mermelada de estación + 2 medialunas dulces o saladas + jugo natural", "price": 20000, "description": "Café - té."}
+        { name: "2 infusiones + porción de tostadas", price: 24000, description: "Con queso crema y mermelada de estación + 2 medialunas + exprimido natural" }
     ],
-    "SIN TACC": [
-        {"name": "Alfajor la hechicera", "price": 5000},
-        {"name": "Conito de dulce de leche", "price": 3500}
-    ],
-    "SIN GLUTEN": [
-        {"name": "Nube de nuez", "price": 7000}
-    ],
-    Promociones: [
-        {
-        name: "Menú del Día",
-        price: 24000,
-        description: "Consultar por el menú del día. Incluye plato principal + guarnicion + bebida sin alcohol + postre."
-        },
-        {
-        name: "Rabas + Stella / Limonada",
-        price: 27000,
-        description: ""
-        },
-        {                                                                                                                                                                                                                                                                                 
-        name: "Licuado para dos + Waffle de crema y frutos rojos",
-        price: 14000,
-        description: ""
-        },
-    ],
+    Postres: [
+        { name: "Ensalada de Fruta", price: 7000 },
+        { name: "Ensalada de Fruta con bocha de helado", price: 10000 },
+        { name: "Frutillas con crema", price: 9500 },
+        { name: "Copa helada con dos bochas", price: 8000 },
+        { name: "Flan casero con ddl / crema", price: 7500 },
+        { name: "Panqueque de ddl", price: 8500 },
+        { name: "Panqueque de Manzana para dos", price: 14000 },
+        { name: "Waffle con dulce de leche", price: 8500 },
+        { name: "Waffle con crema y frutos rojos", price: 9000 },
+        { name: "Waffle con jamón y queso", price: 11000 },
+        { name: "Mousse de chocolate", price: 7000 },
+        { name: "Adicional de bocha de helado", price: 4500 },
+        { name: "Adicional de ddl y crema", price: 3000 }
+    ]
+};
+
+export const menuData = {
     Entradas: [
-        { name: "Tortilla de papa", price: 16000 },
-        { name: "Tortilla a la española", price: 20000 },
-        { name: "Revuelto de gramajo", price: 20000 },
-        { name: "Omelette con jamón y queso", price: 16000 },
-        { name: "Omelette con champiñones", price: 20000 }
+        { name: "Tortilla de papa", price: 19000 },
+        { name: "Tortilla a la española", price: 24000 },
+        { name: "Revuelto de Gramajo", price: 24000 },
+        { name: "Omelette jamón y queso", price: 19000 },
+        { name: "Omelette champiñones", price: 23000 }
     ],
     Ensaladas: [
-        {
-        name: "Ensalada de Mar",
-        price: 20000,
-        description: "Mix de verdes, apio, manzana y langostinos."
-        },
-        {
-        name: "Serrana",
-        price: 19000,
-        description: "Rúcula, tomate cherry, parmesano, jamón crudo, aceitunas negras y semillas de sésamo."
-        },
-        {
-        name: "Especial",
-        price: 18000,
-        description: "Arroz, arvejas, tomate, atún, jamón y queso."
-        },
-        {
-        name: "Americana",
-        price: 18000,
-        description: "Lechuga, tomate, palmitos, queso, choclo, huevo y aceitunas."
-        },
-        {
-        name: "César",
-        price: 19000,
-        description: "Mix de verdes, parmesano, dados de pollo, croutones y salsa César."
-        },
-        {
-        name: "Waldorf",
-        price: 19000,
-        description: "Manzana verde, apio, palmitos, crema y nueces."
-        },
-        {
-        name: "Caprese",
-        price: 17000,
-        description: "Tomate, mozzarella y albahaca."
-        },
-        { name: "Rúcula y parmesano", price: 13000 },
-        {
-        name: "Green",
-        price: 11500,
-        description: "Rúcula, apio, lechuga y palta."
-        },
-        {
-        name: "Mixta",
-        price: 11500,
-        description: "Lechuga, tomate y cebolla."
-        },
-        {
-        name: "Pastel de choclo",
-        price: 18000,
-        description: "Choclo, albahaca y cebolla."
-        },
-        { name: "Salteado de zapallito", price: 18000 },
-        { name: "Wok de vegetales", price: 18000 }
+        { name: "Ensalada de Mar", price: 25000, description: "Mix de verdes, apio, manzana y langostinos." },
+        { name: "Marea", price: 25000, description: "Colchón de rúcula, peras caramelizadas, crocante de jamón crudo, roquefort y nueces, con vinagreta de mostaza, miel, oliva y limón." },
+        { name: "Serrana", price: 23000, description: "Rúcula, tomate cherry, parmesano, jamón crudo, aceituna negra y sésamo." },
+        { name: "Especial", price: 21000, description: "Arroz, arvejas, tomate, atún, jamón y queso." },
+        { name: "Americana", price: 21000, description: "Lechuga, tomate, palmito, queso, choclo, huevo y aceituna." },
+        { name: "César", price: 22000, description: "Mix verde, parmesano, dados de pollo, crutones y salsa César." },
+        { name: "Waldorf", price: 23000, description: "Manzana verde, apio, palmito, crema y nueces." },
+        { name: "Caprese", price: 21000, description: "Tomate, mozzarella, albahaca." },
+        { name: "Honey", price: 22000, description: "Mix de verdes, miel, pimienta, brotes, aceto y oliva." },
+        { name: "Rúcula y Parmesano", price: 17000 },
+        { name: "Green", price: 15000, description: "Rúcula, apio, lechuga y palta." },
+        { name: "Mixta", price: 15000, description: "Lechuga, tomate y cebolla." },
+        { name: "Pastel de Choclo", price: 22000, description: "Choclo, albahaca y cebolla." },
+        { name: "Salteado de Zapallito", price: 23000 },
+        { name: "Wok de vegetales", price: 23000 }
     ],
-    "Frituras": [
-        { name: "Rabas", price: 21000 },
-        { name: "Cornalitos", price: 16000 },
-        { name: "Calamaretis", price: 23000 },
-        { name: "Calamaretis a la lionesa", price: 26000 },
-        { name: "Langostinos empanados", price: 22000 },
-        { name: "Mejillones a la provenzal", price: 25000 },
-        { name: "Gambas al ajillo", price: 27000 }
+    Frituras: [
+        { name: "Cornalitos", price: 19000 },
+        { name: "Rabas", price: 25000 },
+        { name: "Langostinos empanados", price: 25000 },
+        { name: "Calamaretis", price: 27000 },
+        { name: "Mejillón a la provenzal", price: 30000, description: "Con papas a la española." },
+        { name: "Gambas al ajillo", price: 32000, description: "Con papas a la española." },
+        { name: "Calamaretis a la lionesa", price: 33000, description: "Con papas a la española." }
     ],
-    "Frituras para compartir": [
-        {
-        name: "Jardín de Mar",
-        price: 45000,
-        description: "Langostinos, rabas, cornalitos, calamaretis, mejillones a la provenzal, escabeche de calamar."
-        },
-        {
-        name: "Langostinos La Gaviota",
-        price: 37000,
-        description: "Langostinos, panceta y queso, acompañado con papas a la española."
-        }
+    "Para compartir": [
+        { name: "Jardín de mar", price: 54000, description: "Langostinos, rabas, cornalitos, calamaretis, mejillones a la provenzal, escabeche de calamar y soufflé de pescado." },
+        { name: "Langostinos Gaviota", price: 52000, description: "Langostinos, panceta y queso, con papas a la española." }
     ],
-    "Porciones": [
-    { name: "Porción de papas fritas", price: 10000 },
-    { name: "Papas a la provenzal", price: 11000, description: "Ajo y perejil." },
-    { name: "Papas a la criolla", price: 13000, description: "Morrón y cebolla caramelizada." },
-    { name: "Papas especial", price: 17000, description: "Cheddar y panceta ahumada." },
-    { name: "Papas a la española", price: 17000, description: "Acompañadas de crema a las finas hierbas." },
-    { name: "Porción de puré de papa", price: 10000 },
-    { name: "Porción de puré de calabaza", price: 10000 }
+    Promociones: [
+        { name: "Menú del Día", price: 29900, description: "Consultar por el menú del día. Incluye plato principal + guarnición + bebida sin alcohol (línea Coca-Cola o limonada) + postre (flan casero con ddl y crema o ensalada de fruta)." },
+        { name: "Rabas + Stella 1lt / Limonada", price: 29900, description: "Stella Artois de 1lt o limonada con menta y jengibre." },
+        { name: "Langostinos empanados + Stella 1lt / Limonada", price: 29900, description: "Stella Artois de 1lt o limonada con menta y jengibre." }
     ],
-    "Sandwich Frío": [
-    { name: "Básico", price: 13000, description: "Jamón y queso." },
-    { name: "Caramel", price: 15000, description: "Zanahoria caramelizada, tomate y palta." },
-    { name: "Primavera", price: 16000, description: "Lechuga, tomate, huevo duro, jamón y queso." },
-    { name: "Mediterráneo", price: 18500, description: "Rúcula, palmito, tomate, nueces y oliva." },
-    { name: "Especial", price: 18500, description: "Jamón crudo, queso y manteca." },
-    ],
-    "Sandwich Caliente": [
-    { name: "Milanesa de ternera o suprema", price: 18000, description: "Sola." },
-    { name: "Milanesa de ternera o suprema con lechuga y tomate", price: 19000 },
-    { name: "Milanesa de ternera o suprema con jamón y queso", price: 21000 },
-    { name: "Milanesa de ternera o suprema completa", price: 23000, description: "Con lechuga, tomate, jamón, queso y huevo." },
-    { name: "Lomito", price: 19000, description: "Solo." },
-    { name: "Lomito con lechuga y tomate", price: 21000 },
-    { name: "Lomito con jamón y queso", price: 23000 },
-    { name: "Lomito completo", price: 25000, description: "Con lechuga, tomate, jamón, queso y huevo." },
-    { name: "Lomito especial", price: 27000, description: "Jamón, parmesano, cebolla caramelizada, huevo a la plancha y cheddar." },
-    { name: "Hamburguesa", price: 14000, description: "Sola." },
-    { name: "Hamburguesa con lechuga y tomate", price: 16000 },
-    { name: "Hamburguesa con jamón y queso", price: 18000 },
-    { name: "Hamburguesa completa", price: 20000, description: "Con lechuga, tomate, jamón, queso y huevo." },
-    { name: "Hamburguesa especial", price: 21000, description: "Cheddar, cebolla caramelizada, panceta y ketchup." },
-    { name: "Sandwich de pollo", price: 18000, description: "Solo." },
-    { name: "Sandwich de pollo con lechuga y tomate", price: 19000 },
-    { name: "Sandwich de pollo con jamón y queso", price: 21000 },
-    { name: "Sandwich de pollo completo", price: 23000, description: "Con lechuga, tomate, jamón, queso y huevo." },
-    { name: "Sandwich de pollo con tomate, rúcula y jugo de limón", price: 25000 }
-    ],
-    "Minutas": [
-    { name: "Milanesa de ternera", price: 19000, description: "Con guarnición." },
-    { name: "Milanesa de ternera a la suiza", price: 23000, description: "Queso y salsa blanca. Con guarnición." },
-    { name: "Milanesa de ternera napolitana", price: 24000, description: "Salsa de tomate, jamón y queso. Con guarnición." },
-    { name: "Suprema", price: 19000, description: "Con guarnición." },
-    { name: "Suprema a la suiza", price: 23000, description: "Queso y salsa blanca. Con guarnición." },
-    { name: "Suprema napolitana", price: 24000, description: "Salsa de tomate, jamón y queso. Con guarnición." },
-    { name: "Lomito al plato solo", price: 19000 },
-    { name: "Lomito al plato con guarnición", price: 22000 },
-    { name: "Bife de lomo al plato", price: 26000, description: "Con guarnición." },
-    { name: "Bife de lomo completo", price: 31000, description: "Con papas fritas y dos huevos fritos." },
-    { name: "Bife de chorizo al plato", price: 26000, description: "Con guarnición." },
-    { name: "Bife de chorizo completo", price: 31000, description: "Con papas fritas y dos huevos fritos." },
-    { name: "Pollo a la plancha", price: 19000, description: "(Pata muslo o pechuga) con guarnición." }
-    ],
-    "Pescados": [
-    { name: "Merluza a la romana", price: 17000, description: "Con guarnición." },
-    { name: "Lenguado a la plancha", price: 20000, description: "Con guarnición." },
-    { name: "Lenguado a la romana", price: 19000, description: "Con guarnición." },
-    { name: "Abadejo grillé", price: 23000, description: "Con guarnición." },
-    { name: "Salmón blanco", price: 20000, description: "Con guarnición." },
-    { name: "Salmón rosado grillé", price: 36000, description: "Con guarnición." },
-    { name: "Paella", price: 37000 },
-    { name: "Arroz con mariscos", price: 37000 },
-    { name: "Cazuela de mariscos", price: 39000 }
+    Pescados: [
+        { name: "Merluza a la romana con guarnición", price: 20000 },
+        { name: "Lenguado a la plancha con guarnición", price: 21000 },
+        { name: "Lenguado a la romana con guarnición", price: 24000 },
+        { name: "Abadejo grillé con guarnición", price: 28000 },
+        { name: "Salmón blanco con guarnición", price: 24000 },
+        { name: "Salmón rosado grillé con hortalizas", price: 41000 },
+        { name: "Paella", price: 45000 },
+        { name: "Arroz con mariscos", price: 45000 },
+        { name: "Cazuela de mariscos", price: 48000 },
+        { heading: "Guarnición", note: "Papas fritas, puré, papa natural o ensalada de 3 ingredientes." }
     ],
     "Salsas para pescados": [
-    { name: "Cuatro quesos", price: 11000, description: "Crema, parmesano, roquefort y reggianito." },
-    { name: "Putanesca", price: 11000, description: "Tomate, atún, alcaparras, aceitunas y ají picante." },
-    { name: "Roquefort", price: 11000, description: "Crema y roquefort." },
-    { name: "Crema", price: 6000, description: "Salsa de crema." },
-    { name: "A la vasca", price: 6000 },
-    { name: "Al ajillo", price: 6000 },
-    { name: "A la mostaza", price: 11000, description: "Mostaza, crema y parmesano." }
+        { name: "Cuatro quesos", price: 13000, description: "Crema, parmesano, roquefort y reggianito." },
+        { name: "Puttanesca", price: 15000, description: "Tomate, atún, alcaparra, aceituna y ají picante." },
+        { name: "Roquefort", price: 13000, description: "Crema y Roquefort." },
+        { name: "Crema", price: 8000 },
+        { name: "A la vasca", price: 7000 },
+        { name: "Al ajillo", price: 7000 },
+        { name: "Mostaza, crema y parmesano", price: 13000 }
     ],
-    "Pastas Caseras": [
-    { name: "Ñoquis de papa", price: 13000 },
-    { name: "Tallarines", price: 13000 },
-    { name: "Ravioles de espinaca y ricota", price: 15000 },
-    { name: "Sorrentinos de jamón y queso", price: 16000 },
-    { name: "Sorrentinos de calabaza y mozzarella", price: 16000 },
-    { name: "Sorrentinos de langostinos y queso", price: 19000 }
+    "Pastas caseras": [
+        { name: "Ñoquis de papa", price: 15000 },
+        { name: "Tallarines", price: 15000 },
+        { name: "Ravioles", price: 18000, description: "De espinaca y ricota." },
+        { name: "Sorrentinos", price: 20000, description: "De jamón y queso." },
+        { name: "Sorrentinos", price: 20000, description: "De calabaza y mozzarella." },
+        { name: "Sorrentinos", price: 23000, description: "De langostino y queso crema." },
+        { name: "Sorrentinos", price: 27000, description: "De salmón rosado y queso crema." }
     ],
     "Salsas para pastas": [
-    { name: "Fileto, rosa o mixta", price: 6000 },
-    { name: "Crema", price: 6000 },
-    { name: "Bolognesa", price: 10000 },
-    { name: "Estofado de carne", price: 10000 },
-    { name: "Pesto", price: 9000 },
-    { name: "Camarones a la crema", price: 16000 },
-    { name: "Camarones al tomate", price: 16000 },
-    { name: "Mariscos al tomate", price: 16000 }
+        { name: "Fileto - Rosa - Mixta", price: 7000 },
+        { name: "Crema", price: 8000 },
+        { name: "Boloñesa", price: 10000 },
+        { name: "Estofado de carne", price: 13000 },
+        { name: "Pesto", price: 10000 },
+        { name: "Camarones a la crema", price: 19000 },
+        { name: "Camarones al tomate", price: 19000 },
+        { name: "Mariscos al tomate", price: 19000 }
     ],
-    "Menú Infantil": [
-    { name: "Tallarines con salsa mixta", price: 15000 },
-    { name: "Bastoncitos de pollo con papas fritas", price: 15000 },
-    { name: "Lomito con puré", price: 16000 },
+    "Menú infantil": [
+        { name: "Tallarines con salsa (Fileto - Rosa - Mixta)", price: 18000 },
+        { name: "Bastoncitos de Pollo con Papas Fritas", price: 18000 },
+        { name: "Lomito con puré", price: 19000 }
     ],
-    "Postres": [
-    { name: "Ensalada de fruta natural", price: 6000 },
-    { name: "Ensalada de fruta natural con helado", price: 8500 },
-    { name: "Frutillas con crema", price: 8000 },
-    { name: "Copa helada con una bocha", price: 3500 },
-    { name: "Copa helada con dos bochas", price: 7000 },
-    { name: "Flan casero con dulce de leche o crema", price: 6500 },
-    { name: "Panqueque con dulce de leche", price: 7500 },
-    { name: "Panqueque de manzana (para dos)", price: 12000 },
-    { name: "Waffle con dulce de leche", price: 7000 },
-    { name: "Waffle con crema y frutos rojos", price: 8000 },
-    { name: "Waffle con jamón y queso", price: 9000 },
-    { name: "Mousse de chocolate", price: 6000 },
-    { name: "Adicional de crema o dulce de leche", price: 3000 },
-    { name: "Adicional de bocha de helado", price: 3500 }
+    "Sándwiches fríos": [
+        { name: "Básico", price: 14000, description: "Jamón y queso." },
+        { name: "Caramel", price: 14000, description: "Zanahoria caramelizada, tomate y palta." },
+        { name: "Primavera", price: 15000, description: "Lechuga, tomate, huevo duro, jamón y queso." },
+        { name: "Mediterráneo", price: 17000, description: "Rúcula, palmito, tomate, nueces y aceitunas." },
+        { name: "Especial", price: 19000, description: "Jamón crudo, queso y manteca." }
+    ],
+    "Sándwiches calientes": [
+        { name: "Milanesa Sola", price: 20000 },
+        { name: "Milanesa con Lechuga y Tomate", price: 22000 },
+        { name: "Milanesa con Jamón y Queso", price: 24000 },
+        { name: "Milanesa Completa", price: 25000, description: "Lechuga, tomate, jamón, queso y huevo." },
+        { name: "Pollo Solo", price: 20000 },
+        { name: "Pollo con Lechuga y Tomate", price: 22000 },
+        { name: "Pollo con Jamón y Queso", price: 24000 },
+        { name: "Pollo Completo", price: 25000, description: "Lechuga, tomate, jamón, queso y huevo." },
+        { name: "Pollo Especial", price: 25000, description: "Tomate, rúcula y jugo de limón." },
+        { name: "Lomito Solo", price: 22000 },
+        { name: "Lomito con Lechuga y Tomate", price: 24000 },
+        { name: "Lomito con Jamón y Queso", price: 26000 },
+        { name: "Lomito Completo", price: 29000, description: "Lechuga, tomate, jamón, queso y huevo." },
+        { name: "Lomito Especial", price: 30000, description: "Jamón, parmesano, cebolla caramelizada, cheddar y huevo." },
+        { heading: "", note: "Los sándwiches calientes salen con guarnición de papas fritas." }
+    ],
+    Minutas: [
+        { name: "Milanesa Ternera con guarnición", price: 23000 },
+        { name: "Milanesa Ternera suiza con guarnición", price: 27000, description: "Queso y salsa blanca." },
+        { name: "Milanesa Ternera napolitana con guarnición", price: 28000, description: "Jamón, queso y salsa de tomate." },
+        { name: "Suprema con guarnición", price: 23000 },
+        { name: "Suprema suiza con guarnición", price: 27000, description: "Queso y salsa blanca." },
+        { name: "Suprema napolitana con guarnición", price: 28000, description: "Jamón, queso y salsa de tomate." },
+        { name: "Lomito al plato con guarnición", price: 27000 },
+        { name: "Bife de lomo con guarnición", price: 31000 },
+        { name: "Bife de lomo completo", price: 37000, description: "Con papas fritas y dos huevos." },
+        { name: "Bife de chorizo con guarnición", price: 31000 },
+        { name: "Bife de chorizo completo", price: 37000, description: "Con papas fritas y dos huevos." },
+        { name: "Pollo a la plancha con guarnición", price: 24000, description: "Pata muslo o pechuga." },
+        { heading: "Guarnición", note: "Papas fritas, puré o ensalada de 3 ingredientes." }
+    ],
+    Porciones: [
+        { name: "Papas Fritas", price: 12000 },
+        { name: "Papas Fritas a la provenzal", price: 13000, description: "Ajo y perejil." },
+        { name: "Papas Fritas a la criolla", price: 15000, description: "Morrón y cebolla caramelizada." },
+        { name: "Papas Fritas especial", price: 18000, description: "Cheddar y panceta ahumada." },
+        { name: "Papas Fritas a la española", price: 21000, description: "Con crema a las finas hierbas." },
+        { name: "Puré de papa o calabaza", price: 12000 },
+        { name: "Papas al natural", price: 12000 },
+        { name: "Hortalizas", price: 18000 }
     ],
     "Bebidas sin alcohol": [
-    { name: "Agua con o sin gas 350cc", price: 3500 },
-    { name: "Gaseosa Coca-Cola 350cc", price: 4000 },
-    { name: "Gaseosa Coca-Cola 500cc", price: 5000 },
-    { name: "Aquarius 500cc", price: 4000 },
-    { name: "Limonada común chica", price: 5000 },
-    { name: "Limonada común grande", price: 8000 },
-    { name: "Limonada con jengibre y menta chica", price: 5500 },
-    { name: "Limonada con jengibre y menta grande", price: 9500 },
-    { name: "Licuado de frutas", price: 6000 },
-    { name: "Jugo exprimido", price: 6000 },
-    { name: "Porrón Stella 0% alcohol", price: 5500 },
-    { name: "Porrón Corona 0% alcohol", price: 5500 },
-    { name: "Gancia 0% alcohol", price: 5000 },
-    { name: "Gatorade", price: 5000 },
+        { name: "Agua con y sin gas", price: 4500 },
+        { name: "Gaseosa 350cc Coca-Cola", price: 4500 },
+        { name: "Limonada común chica", price: 6000 },
+        { name: "Limonada común grande", price: 9000 },
+        { name: "Limonada menta y jengibre chica", price: 7000 },
+        { name: "Limonada menta y jengibre grande", price: 12000 },
+        { name: "Aquarius saborizada", price: 5000 },
+        { name: "Gatorade", price: 7000 },
+        { name: "Licuados", price: 7000 },
+        { name: "Exprimido de Naranja", price: 7000 },
+        { name: "Porrón Stella 0% alcohol", price: 6500 },
+        { name: "Porrón Corona 0% alcohol", price: 6500 },
+        { name: "Gancia 0% alcohol", price: 6000 }
     ],
     "Bebidas con alcohol": [
-    { name: "Lata Andes", price: 5000 },
-    { name: "Lata Stella", price: 6000 },
-    { name: "Lata Patagonia", price: 6000 },
-    { name: "Porrón Corona 330cc", price: 6000 },
-    { name: "Cerveza Corona 710cc", price: 10000 },
-    { name: "Cerveza Patagonia 730cc", price: 9000 },
-    { name: "Stella Artois 1L", price: 9000 }
+        { name: "Patagonia 730cc", price: 11000 },
+        { name: "Stella Artois 1lt", price: 11000 },
+        { name: "Corona 710cc", price: 11000 },
+        { name: "Porrón Corona 330cc", price: 7000 },
+        { name: "Lata Patagonia", price: 7000 },
+        { name: "Lata Stella Artois", price: 7000 },
+        { name: "Lata Andes", price: 6000 },
+        { name: "Gancia con limón", price: 9000 },
+        { name: "Gancia hibiscus", price: 9000 },
+        { name: "Fernet Branca", price: 9000 },
+        { name: "Campari orange / tonic", price: 9000 },
+        { name: "Cinzano Vermouth Rosso", price: 9000 },
+        { name: "Cynar Pomelo", price: 9000 },
+        { name: "Cynar Julep", price: 11000 },
+        { name: "Aperol spritz", price: 11000 },
+        { name: "Gin tonic Heredero", price: 9000 },
+        { name: "Gin tonic Aconcagua", price: 9000 },
+        { name: "Gin tonic Malaria", price: 11000 },
+        { name: "Martini blanco o rosso", price: 10000 },
+        { name: "Bacardí con Cola o Cuba libre", price: 13000 },
+        { name: "Whisky" },
+        { name: "Daiquiri", price: 13000 },
+        { name: "Jarra de frutas", price: 16000 },
+        { name: "Clericó Álamos blanco dulce", price: 37500 },
+        { name: "Sangría Álamos Malbec", price: 37000 }
     ],
-    "Aperitivos": [
-    { name: "Daiquiri", price: 9000},
-    { name: "Gancia", price: 8000 },
-    { name: "Gancia Hibiscus", price: 9000 },
-    { name: "Fernet Branca", price: 8000 },
-    { name: "Campari Orange", price: 10000 },
-    { name: "Campari Tonic", price: 10000 },
-    { name: "Aperol Spritz", price: 10000 },
-    { name: "Vermouth Cinzano Rosso", price: 8000 },
-    { name: "Cynar Pomelo", price: 8000 },
-    { name: "Cynar Julep", price: 10000 },
-    { name: "Gin Tonic Herederos", price: 7000 },
-    { name: "Gin Tonic Aconcagua", price: 8000 },
-    { name: "Gin Tonic Malaria", price: 10000 },
-    { name: "Martini (bianco y rosso)", price: 11000 },
-    { name: "Bacardi (Ron con cola o cuba libre)", price: 8000 },
-    { name: "Wisky", price: 11000 },
-    { name: "Jarra de frutas", price: 18000 },
-    { name: "Clericó Álamos Dulce Natural", price: 32000},
-    { name: "Sangría Álamos Malbec", price: 32000}
-    ],
-    "Vinos": [
-    { name: "Santa Julia Malbec", price: 12000},
-    { name: "Santa Julia Chardonnay", price: 12000 },
-    { name: "Santa Julia Chennin dulce", price: 12000 },
-    { name: "Latitud 33 Malbec", price: 14000 },
-    { name: "Latitud 33 Chardonnay", price: 14000 },
-    { name: "Latitud 33 Cabernet Sauvignon", price: 14000 },
-    { name: "Manos Negras Malbec", price: 16000 },
-    { name: "Manos Negras Chardonnay", price: 16000 },
-    { name: "Manos Negras Pinot Noir", price: 18000 },
-    { name: "Álamos Malbec", price: 18000 },
-    { name: "Álamos Chardonnay", price: 18000 },
-    { name: "Álamos Blanco Dulce", price: 18000 },
-    { name: "Nicasia Malbec", price: 22000 },
-    { name: "Nicasia Chardonnay", price: 22000 },
-    { name: "Copa de vino", price: 5000 },
-    { name: "Chandon Extra Brut", price: 30000 },
-    { name: "Barón B Extra Brut", price: 45000 },
-    ],
+    Vinos: [
+        { name: "Santa Julia malbec", price: 15000 },
+        { name: "Santa Julia chardonnay", price: 15000 },
+        { name: "Santa Julia chenin dulce", price: 15000 },
+        { name: "Latitud 33 malbec", price: 18000 },
+        { name: "Latitud 33 chardonnay", price: 18000 },
+        { name: "Latitud 33 cab. sauvignon", price: 18000 },
+        { name: "Manos Negras malbec", price: 20000 },
+        { name: "Manos Negras chardonnay", price: 20000 },
+        { name: "Manos Negras pinot noir", price: 22000 },
+        { name: "Álamos malbec", price: 20000 },
+        { name: "Álamos chardonnay", price: 20000 },
+        { name: "Álamos blanco dulce", price: 20000 },
+        { name: "Nicasia malbec", price: 25000 },
+        { name: "Nicasia chardonnay", price: 25000 },
+        { name: "Copa de vino", price: 7000 },
+        { name: "Chandon Extra brut", price: 40000 },
+        { name: "Baron B Extra Brut", price: 68000 }
+    ]
 };
